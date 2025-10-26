@@ -10,9 +10,10 @@ return function(opts)
     transparent = false,
   }
   local config = vim.tbl_deep_extend("force", default_opts, opts)
+
   local palette = require("zen_respite.palette").colors
   local c = palette
-  
+
   local bg_color
   if config.transparent then
     bg_color = "None"
@@ -22,7 +23,6 @@ return function(opts)
   end
 
   vim.cmd("hi clear")
-
 
   -- Editor
   set(0, "Normal",                  { fg = c.base1, bg = bg_color })
@@ -55,7 +55,7 @@ return function(opts)
   set(0, "BufferLineHint",          { bg = bg_color })
   set(0, "BufferLineIndicatorSelected",{ bg = bg_color })
 
-  -- Syntax (ส่วนนี้ไม่ต้องแก้ไข bg เพราะไม่ต้องการให้โปร่งใส)
+  -- Syntax
   set(0, "Comment",   { fg = c.base0, italic = true })
   set(0, "Keyword",   { fg = c.violet })
   set(0, "Function",  { fg = c.blue })
@@ -66,7 +66,7 @@ return function(opts)
   set(0, "Error",     { fg = c.red, bold = true })
 
   -- UI
-  set(0, "Pmenu",     { fg = c.base1, bg = bg_color }) -- ใช้ bg_color
+  set(0, "Pmenu",     { fg = c.base1, bg = bg_color })
   set(0, "PmenuSel",  { fg = c.base03, bg = c.yellow })
   set(0, "Search",    { fg = c.base03, bg = c.yellow })
   set(0, "IncSearch", { fg = c.base03, bg = c.orange })
