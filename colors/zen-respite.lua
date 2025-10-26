@@ -10,7 +10,7 @@ vim.cmd("hi clear")
 local c = palette
 
 -- Editor
-set(0, "Normal",                  { fg = c.base1, bg = "None" })
+set(0, "Normal",                  { bg = "None" })
 set(0, "NormalNC",                { bg = "None" })
 set(0, "NormalFloat",             { fg = c.base1, bg = "None" })
 set(0, "SignColumn",              { bg = "None" })
