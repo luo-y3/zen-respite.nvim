@@ -1,10 +1,14 @@
 -- zen-respite.nvim/lua/zen-respite/config.lua
+
 local M = {}
 
--- กำหนดค่าเริ่มต้นทั้งหมด
 M.defaults = {
-  style = "dark", 
-  transparent = true, -- ตั้งค่าเริ่มต้นเป็นโปร่งใส
+  transparent = false,
+  style = "dark", -- "dark" or "light"
+  italic_comments = true,
+  italic_keywords = false,
+  bold_keywords = true,
+  bold_functions = false,
   terminal_colors = true,
   styles = {
     comments = { italic = true },
@@ -12,22 +16,35 @@ M.defaults = {
     functions = {},
     variables = {},
     strings = {},
-    -- กำหนดให้ sidebars และ floats โปร่งใสตามค่าเริ่มต้น
-    sidebars = "transparent", 
-    floats = "transparent",
   },
-  dim_inactive = false,
-  on_highlights = function(hl, c) end,
-  -- รายชื่อ windows ที่เป็น sidebar
-  sidebars_windows = { "qf", "help", "NvimTree", "NeoTree", "Outline" }, 
 }
 
-M.config = {}
+M.options = {}
 
---- @param options table|nil
-function M.setup(options)
-  M.config = vim.tbl_deep_extend("force", {}, M.defaults, options or {})
-  return M.config
+function M.setup(opts)
+  M.options = vim.tbl_deep_extend("force", {}, M.defaults, opts or {})
+  
+  -- Apply legacy options if new style config not used
+  if opts and opts.italic_comments ~= nil then
+    M.options.styles.comments.italic = opts.italic_comments
+  end
+  if opts and opts.italic_keywords ~= nil then
+    M.options.styles.keywords.italic = opts.italic_keywords
+  end
+  if opts and opts.bold_keywords ~= nil then
+    M.options.styles.keywords.bold = opts.bold_keywords
+  end
+  if opts and opts.bold_functions ~= nil then
+    M.options.styles.functions.bold = opts.bold_functions
+  end
+end
+
+function M.get()
+  -- Initialize with defaults if setup() was never called
+  if vim.tbl_isempty(M.options) then
+    M.setup()
+  end
+  return M.options
 end
 
 return M
