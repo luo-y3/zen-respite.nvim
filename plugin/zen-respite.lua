@@ -1,5 +1,6 @@
+-- zen-respite.nvim/plugin/zen-respite.lua
 
 -- Optional setup hook for lazy.nvim or packer
-vim.api.nvim_create_user_command("ZenRespite", function()
-  vim.cmd("colorscheme zen-respite")
-end, {})
+-- vim.api.nvim_create_user_command("ZenRespite", function()
+--   vim.cmd("colorscheme zen-respite")
+-- end, {})
