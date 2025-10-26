@@ -2,11 +2,11 @@
 
 A calm, bamboo-inspired Neovim colorscheme — blending Solarized harmony with Zen minimalism.
 
-> Designed for Mononoki Nerd Font + dark backgrounds.
+> I'm just learn how to make colorscheme.
 
 ## 🧘‍♀️ Preview
 
-_(add screenshot here)_
+_(Coming Soon)_
 
 ## 📦 Installation
 
