@@ -7,10 +7,10 @@ local c = require("zen-respite.palette").colors
 M.setup = function()
   return {
     -- Standard
-    Comment = { fg = c.base0, italic = true },
+    Comment = { fg = c.base00, italic = true },
 
     -- Treesitter
-    ["@string"] = { fg = c.base0 }
+    ["@string"] = { fg = c.cyan }
   }
   
 end

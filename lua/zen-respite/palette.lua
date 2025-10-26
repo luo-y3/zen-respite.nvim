@@ -3,25 +3,30 @@
 local M = {}
 
 M.colors = {
-  base03 = "#0f100f",
-  base02 = "#181a18",
-  base01 = "#2c2e2b",
-  base00 = "#3a3d37",
-  base0  = "#a5a691",
-  base1  = "#c4c5b5",
-  base2  = "#e5e6d3",
-  base3  = "#f6f7e0",
-  yellow = "#c4b28a",
-  orange = "#d9a97c",
-  red    = "#e67e80",
-  magenta= "#c47fd5",
-  violet = "#938aa9",
-  blue   = "#7fb4ca",
-  cyan   = "#7aa89f",
-  green  = "#98bb6c",
-  cursor = "#dcd5b8",
-  visual = "#3f423a",
-  border = "#41433d",
+  -- Dark/Earthy Tones
+  base03 = "#1a2520", -- Background : Deep, muted dark green/brown
+  base02 = "#26352c", -- Background / Contrast
+  base01 = "#4c594c",
+  base00 = "#6e7c6d", -- Comment / Low Contrast
+  
+  -- Light / Creamy / Foreground Tones
+  base0  = "#9da89a",
+  base1  = "#c5d0c0", -- Foreground : Soft, light green / cream
+  base2  = "#e3e7dc", 
+  base3  = "#fdfcf3", -- Lightest Cream
+
+  -- Accent Colors
+  yellow = "#e2b761", -- Golden/Ochre Yellow
+  orange = "#e07c5a", 
+  red    = "#cc6666",
+  magenta= "#d279a3",
+  violet = "#9c81a9",
+  blue   = "#7796b4",
+  cyan   = "#6e9a42", -- Palm Leaf/Bamboo Green
+  green  = "#a4b95f", -- Middle Green Yellow/Light Olive
+  cursor = "#c5d0c0", 
+  visual = "#33453a", -- Muted Dark Green for selection
+  border = "#455a45", -- Darker green for borders
 }
 
 return M
