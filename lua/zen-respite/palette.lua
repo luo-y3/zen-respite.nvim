@@ -1,3 +1,4 @@
+-- zen-respite.nvim/lua/zen-respite/palette.lua
 
 local M = {}
 
