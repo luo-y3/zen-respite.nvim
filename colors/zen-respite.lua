@@ -11,7 +11,7 @@ return function(opts)
 
   local c = require("zen_respite.palette").colors
 
-  local bg_color = config.transparent and "none" or c.base03
+  local bg_color = config.transparent and "None" or c.base03
   vim.o.background = "dark"
 
   vim.cmd("hi clear")
