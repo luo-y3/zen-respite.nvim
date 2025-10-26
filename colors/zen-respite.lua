@@ -1,3 +1,4 @@
+-- zen-respite.nvim/colors/zen-respite.lua
 
 local palette = require("zen_respite.palette").colors
 local set = vim.api.nvim_set_hl
@@ -14,12 +15,12 @@ set(0, "NormalNC",                { bg = "None" })
 set(0, "NormalFloat",             { fg = c.base1, bg = "None" })
 set(0, "SignColumn",              { bg = "None" })
 set(0, "CursorLine",              { bg = "None" })
-set(0, "FloatBorder",             { bg = "None" })
+set(0, "FloatBorder",             { fg = c.base2, bg = "None" })
 set(0, "Folded",                  { bg = "None" })
 set(0, "FoldColumn",              { bg = "None" })
 set(0, "CursorLineNr",            { fg = c.yellow, bg = "None" })
 set(0, "LineNr",                  { fg = c.base0, bg = "None" })
-set(0, "StatusLine",              { fg = c.base2, bg = "None" })
+set(0, "StatusLine",              { fg = c.base02, bg = "None" })
 set(0, "VertSplit",               { fg = c.border, bg = "None" })
 set(0, "EndOfBuffer",             { bg = "None" })
 set(0, "ColorColumn",             { bg = "None" })
