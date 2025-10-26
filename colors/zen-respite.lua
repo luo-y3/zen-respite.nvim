@@ -9,13 +9,14 @@ vim.cmd("hi clear")
 local c = palette
 
 -- Editor
-set(0, "Normal", { fg = c.base1, bg = c.base02 })
-set(0, "CursorLine", { bg = c.base00 })
-set(0, "Visual", { bg = c.visual })
-set(0, "LineNr", { fg = c.base0 })
-set(0, "CursorLineNr", { fg = c.yellow })
-set(0, "StatusLine", { fg = c.base2, bg = c.base01 })
-set(0, "VertSplit", { fg = c.border })
+set(0, "Normal",        { fg = colors.base1, bg = "none" })
+set(0, "CursorLine",    { bg = colors.base00 })
+set(0, "Visual",        { bg = colors.visual })
+set(0, "CursorLineNr",  { fg = colors.yellow })
+set(0, "LineNr",        { fg = colors.base0, bg = "none" })
+set(0, "StatusLine",    { fg = colors.base2, bg = "none" })
+set(0, "VertSplit",     { fg = colors.border, bg = "none" })
+set(0, "SignColumn",    { bg = "none"})
 
 -- Syntax
 set(0, "Comment", { fg = c.base0, italic = true })
