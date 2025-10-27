@@ -2,28 +2,6 @@
 
 local M = {}
 
-M.colors = {
-
-    base03 = "#1e2018",
-    base02 = "#2e3223",
-    base01 = "#4a4f3a",
-    base00 = "#777b63",
-    base3  = "#5a6625",
-    base2  = "#98a75a",
-    base1  = "#d4deb2",
-    base0  = "#f4f7e6",
-    yellow = "#e0b14a",
-    orange = "#d97a4f",
-    red    = "#cc6666",
-    magenta= "#d279a3",
-    violet = "#9c81a9",
-    blue   = "#7796b4",
-    cyan   = "#7c9b43",
-    green  = "#a6b95d",
-    cursor = "#d6d9c7",
-    visual = "#3a3e2e",
-    border = "#575b44",
-}
 
 M.themes = {
   forest_mist = {
