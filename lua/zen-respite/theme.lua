@@ -31,8 +31,8 @@ function M.setup()
     colors.bg_alt = transparent and "NONE" or c.base3
     colors.bg_highlight = c.base2
     colors.bg_visual = c.visual
-    colors.fg = c.base1
-    colors.fg_alt = c.base0
+    colors.fg = c.base01
+    colors.fg_alt = c.base00
     colors.fg_comment = c.base0
     colors.border = c.border
   end
