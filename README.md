@@ -21,12 +21,6 @@ _(coming Soon)_
     require("zen-respite").setup({
       style = "dark", -- You can also use "light" as light theme.
       transparent = true, -- Optional for transparency.
-      terminal_colors = true, --Allow terminal to use colorscheme.
-      -- You can custom it too.
-      styles = {
-        comment = {italic = true},
-        -- etc...
-      },
     })
     vim.cmd.colorscheme("zen-respite")
   end
