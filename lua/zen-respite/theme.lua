@@ -21,7 +21,7 @@ function M.setup()
   if is_dark then
     colors.bg = transparent and "NONE" or c.base03
     colors.bg_alt = transparent and "NONE" or c.base03
-    colors.bg_highlight = c.base02
+    colors.bg_highlight = c.hl
     colors.bg_visual = c.visual
     colors.fg = c.base1
     colors.fg_alt = c.base0

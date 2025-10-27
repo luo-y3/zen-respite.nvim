@@ -25,6 +25,7 @@ M.themes = {
     cursor = "#c5d0c0", 
     visual = "#33453a", -- Muted Dark Green for selection
     border = "#455a45", -- Darker green for borders
+    hl     = "#ED4B2D",
   },
 
   moss_stone = {
@@ -49,6 +50,7 @@ M.themes = {
     cursor = "#c5d0c0", 
     visual = "#33453a", -- Muted Dark Green for selection
     border = "#455a45", -- Darker green for borders
+    hl     = "#ED4B2D",
 
   },
 
@@ -72,6 +74,7 @@ M.themes = {
     cursor = "#c5d0c0",
     visual = "#33453a",
     border = "#455a45",
+    hl     = "#ED4B2D",
   },
 
   warm_bamboo = {
@@ -94,6 +97,7 @@ M.themes = {
     cursor = "#d6d9c7",
     visual = "#3a3e2e",
     border = "#575b44",
+    hl     = "#ED4B2D",
   },
 
   misty_pine = {
@@ -116,6 +120,7 @@ M.themes = {
     cursor = "#c8d4c9",
     visual = "#2e3d37",
     border = "#4a5a50",
+    hl     = "#ED4B2D",
   },
 
   zen_clay = {
@@ -138,11 +143,13 @@ M.themes = {
     cursor = "#dcd0c2",
     visual = "#3c2f27",
     border = "#594b41",
+    hl     = "#ED4B2D",
+
   },
 }
 
 function M.get(theme_name)
-  return M.themes[theme_name] or M.themes.moss_calm
+  return M.themes[theme_name] or M.themes.warm_bamboo
 end
 
 return M
