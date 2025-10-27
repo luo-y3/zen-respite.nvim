@@ -19,7 +19,6 @@ _(coming Soon)_
   priority = 1000,
   config = function()
     require("zen-respite").setup({
-      style = "dark", -- You can also use "light" as light theme.
       transparent = true, -- Optional for transparency.
     })
     vim.cmd.colorscheme("zen-respite")
