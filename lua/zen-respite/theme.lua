@@ -27,8 +27,8 @@ function M.setup()
     colors.border = c.border
   else
     -- Light theme mapping (inverted)
-    colors.bg = transparent and "NONE" or c.base0
-    colors.bg_alt = transparent and "NONE" or c.base1
+    colors.bg = transparent and "NONE" or c.base00
+    colors.bg_alt = transparent and "NONE" or c.base0
     colors.bg_highlight = c.base2
     colors.bg_visual = c.base2
     colors.fg = c.base01
