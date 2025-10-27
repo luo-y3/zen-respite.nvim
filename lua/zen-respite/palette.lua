@@ -3,78 +3,26 @@
 local M = {}
 
 M.colors = {
-  -- Dark/Earthy Tones
-  base03 = "#1a2520", -- Background : Deep, muted dark green/brown
-  base02 = "#26352c", -- Background / Contrast
-  base01 = "#4c594c",
-  base00 = "#6e7c6d", -- Comment / Low Contrast
-  
-  base3  = "#7d9774", -- Darker Foreground Green
-  base2  = "#a5bfa4", -- Medium Foreground: Soft, Muted Light Green
-  base1  = "#c6d8c3", -- Light Creamy Green
-  base0  = "#e3eee2", -- Lightest Cream/Off-White -- almost white, gentle warm tone
 
---[[
-
-  -- Forest Mist
-  base03 = "#1a2520", 
-  base02 = "#26352c", 
-  base01 = "#4c594c",
-  base00 = "#6e7c6d", 
-  base3  = "#7d9774", -- Darker Foreground Green
-  base2  = "#a5bfa4", -- Medium Foreground: Soft, Muted Light Green
-  base1  = "#c6d8c3", -- Light Creamy Green
-  base0  = "#e3eee2", -- Lightest Cream/Off-White
-  -- Accent Colors
-  yellow = "#e2b761", -- Golden/Ochre Yellow
-  orange = "#e07c5a", 
-  red    = "#cc6666",
-  magenta= "#d279a3",
-  violet = "#9c81a9",
-  blue   = "#7796b4",
-  cyan   = "#6e9a42", -- Palm Leaf/Bamboo Green
-  green  = "#a4b95f", -- Middle Green Yellow/Light Olive
-  cursor = "#c5d0c0", 
-  visual = "#33453a", -- Muted Dark Green for selection
-  border = "#455a45", -- Darker green for borders
-
-  -- Moss & Stone
-  base03 = "#1a2520", 
-  base02 = "#26352c", 
-  base01 = "#4c594c",
-  base00 = "#6e7c6d",
-  base3  = "#728c6e", -- Darker Foreground Green/Grey
-  base2  = "#9fbda3", -- Medium Foreground: Muted Sage Green
-  base1  = "#cdd9b7", -- Light Beige/Olive Cream
-  base0  = "#f0f5e3", -- Lightest Cream/Pale Yellow
-  -- Accent Colors
-  yellow = "#e2b761", -- Golden/Ochre Yellow
-  orange = "#e07c5a", 
-  red    = "#cc6666",
-  magenta= "#d279a3",
-  violet = "#9c81a9",
-  blue   = "#7796b4",
-  cyan   = "#6e9a42", -- Palm Leaf/Bamboo Green
-  green  = "#a4b95f", -- Middle Green Yellow/Light Olive
-  cursor = "#c5d0c0", 
-  visual = "#33453a", -- Muted Dark Green for selection
-  border = "#455a45", -- Darker green for borders
-
-
---]]--
-
-  -- Accent Colors
-  yellow = "#e2b761", -- Golden/Ochre Yellow
-  orange = "#e07c5a", 
-  red    = "#cc6666",
-  magenta= "#d279a3",
-  violet = "#9c81a9",
-  blue   = "#7796b4",
-  cyan   = "#6e9a42", -- Palm Leaf/Bamboo Green
-  green  = "#a4b95f", -- Middle Green Yellow/Light Olive
-  cursor = "#c5d0c0", 
-  visual = "#33453a", -- Muted Dark Green for selection
-  border = "#455a45", -- Darker green for borders
+    base03 = "#1e2018",
+    base02 = "#2e3223",
+    base01 = "#4a4f3a",
+    base00 = "#777b63",
+    base3  = "#5a6625",
+    base2  = "#98a75a",
+    base1  = "#d4deb2",
+    base0  = "#f4f7e6",
+    yellow = "#e0b14a",
+    orange = "#d97a4f",
+    red    = "#cc6666",
+    magenta= "#d279a3",
+    violet = "#9c81a9",
+    blue   = "#7796b4",
+    cyan   = "#7c9b43",
+    green  = "#a6b95d",
+    cursor = "#d6d9c7",
+    visual = "#3a3e2e",
+    border = "#575b44",
 }
 
 M.themes = {
