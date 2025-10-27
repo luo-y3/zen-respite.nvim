@@ -4,7 +4,7 @@ local M = {}
 
 M.defaults = {
   transparent = false,
-  style = "dark", -- "dark" or "light"
+  style = "dark",
   italic_comments = true,
   italic_keywords = false,
   bold_keywords = true,
