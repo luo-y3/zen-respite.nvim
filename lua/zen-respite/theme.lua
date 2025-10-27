@@ -14,17 +14,28 @@ function M.setup()
   
   -- Color mappings based on theme style
   local colors = {}
+    -- Dark theme mapping
+    -- colors.bg = transparent and "NONE" or c.base03
+    -- colors.bg_alt = transparent and "NONE" or c.base03
+    -- colors.bg_highlight = c.base02
+    -- colors.bg_visual = c.visual
+    -- colors.fg = c.base1
+    -- colors.fg_alt = c.base0
+    -- colors.fg_comment = c.base00
+    -- colors.border = c.border
+  if is_dark then
+  else
+    -- Light theme mapping (inverted)
+    colors.bg = transparent and "NONE" or c.base3
+    colors.bg_alt = transparent and "NONE" or c.base3
+    colors.bg_highlight = c.base2
+    colors.bg_visual = c.visual
+    colors.fg = c.base01
+    colors.fg_alt = c.base00
+    colors.fg_comment = c.base0
+    colors.border = c.border
+  end
   
-  -- Dark theme mapping
-  colors.bg = transparent and "NONE" or c.base03
-  colors.bg_alt = transparent and "NONE" or c.base03
-  colors.bg_highlight = c.base02
-  colors.bg_visual = c.visual
-  colors.fg = c.base1
-  colors.fg_alt = c.base0
-  colors.fg_comment = c.base00
-  colors.border = c.border
-
   -- Common accent colors (same for both themes)
   colors.red = c.red
   colors.orange = c.orange
@@ -37,6 +48,16 @@ function M.setup()
   colors.cursor = c.cursor
   
   local theme = {}
+
+  -- Dark theme mapping
+  colors.bg = transparent and "NONE" or c.base03
+  colors.bg_alt = transparent and "NONE" or c.base03
+  colors.bg_highlight = c.base02
+  colors.bg_visual = c.visual
+  colors.fg = c.base1
+  colors.fg_alt = c.base0
+  colors.fg_comment = c.base00
+  colors.border = c.border
   
   -- Editor highlights
   theme.editor = {
