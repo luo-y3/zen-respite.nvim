@@ -97,7 +97,7 @@ M.themes = {
     cursor = "#d6d9c7",
     visual = "#3a3e2e",
     border = "#575b44",
-    hl     = "#f7caab",
+    hl     = "#5a1602",
   },
 
   misty_pine = {
