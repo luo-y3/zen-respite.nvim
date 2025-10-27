@@ -25,7 +25,7 @@ M.themes = {
     cursor = "#c5d0c0", 
     visual = "#33453a", -- Muted Dark Green for selection
     border = "#455a45", -- Darker green for borders
-    hl     = "#ED4B2D",
+    hl     = "#5d1b0e",
   },
 
   moss_stone = {
@@ -50,7 +50,7 @@ M.themes = {
     cursor = "#c5d0c0", 
     visual = "#33453a", -- Muted Dark Green for selection
     border = "#455a45", -- Darker green for borders
-    hl     = "#ED4B2D",
+    hl     = "#5d1b0e",
 
   },
 
@@ -74,7 +74,7 @@ M.themes = {
     cursor = "#c5d0c0",
     visual = "#33453a",
     border = "#455a45",
-    hl     = "#ED4B2D",
+    hl     = "#5d1b0e",
   },
 
   warm_bamboo = {
@@ -120,7 +120,7 @@ M.themes = {
     cursor = "#c8d4c9",
     visual = "#2e3d37",
     border = "#4a5a50",
-    hl     = "#ED4B2D",
+    hl     = "#5d1b0e",
   },
 
   zen_clay = {
@@ -143,7 +143,7 @@ M.themes = {
     cursor = "#dcd0c2",
     visual = "#3c2f27",
     border = "#594b41",
-    hl     = "#ED4B2D",
+    hl     = "#5d1b0e",
 
   },
 }
