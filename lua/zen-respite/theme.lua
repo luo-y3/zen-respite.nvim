@@ -26,7 +26,7 @@ function M.setup()
     colors.fg = c.base1
     colors.fg_alt = c.base0
     colors.fg_comment = c.base00
-    colors.border = c.hl
+    colors.border = c.border
   end
   
   -- Common accent colors (same for both themes)
