@@ -10,10 +10,10 @@ M.colors = {
   base00 = "#6e7c6d", -- Comment / Low Contrast
   
   -- Light / Creamy / Foreground Tones
-  base0  = "#9da89a",
-  base1  = "#c5d0c0", -- Foreground : Soft, light green / cream
-  base2  = "#e3e7dc", 
-  base3  = "#fdfcf3", -- Lightest Cream
+  base3  = "#517f29",
+  base2  = "#67a234", -- Foreground : Soft, light green / cream
+  base1  = "#80c346", 
+  base0  = "#c2e99f", -- Lightest Cream
 
   -- Accent Colors
   yellow = "#e2b761", -- Golden/Ochre Yellow
