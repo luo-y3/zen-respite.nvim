@@ -25,7 +25,7 @@ function M.setup()
     colors.bg_visual = c.visual
     colors.fg = c.base1
     colors.fg_alt = c.base0
-    colors.fg_comment = c.base00
+    colors.fg_comment = c.hl
     colors.border = c.border
   end
   
