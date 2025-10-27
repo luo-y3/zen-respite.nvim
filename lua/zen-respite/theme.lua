@@ -18,7 +18,7 @@ function M.setup()
   if is_dark then
     -- Dark theme mapping
     colors.bg = transparent and "NONE" or c.base03
-    colors.bg_alt = transparent and "NONE" or c.base02
+    colors.bg_alt = transparent and "NONE" or c.base03
     colors.bg_highlight = c.base02
     colors.bg_visual = c.visual
     colors.fg = c.base1
@@ -27,8 +27,8 @@ function M.setup()
     colors.border = c.border
   else
     -- Light theme mapping (inverted)
-    colors.bg = transparent and "NONE" or c.base3
-    colors.bg_alt = transparent and "NONE" or c.base2
+    colors.bg = transparent and "NONE" or c.base2
+    colors.bg_alt = transparent and "NONE" or c.base1
     colors.bg_highlight = c.base2
     colors.bg_visual = c.base2
     colors.fg = c.base01
