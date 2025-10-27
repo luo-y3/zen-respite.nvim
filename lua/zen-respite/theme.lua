@@ -66,8 +66,8 @@ function M.setup()
     VisualNOS = { link = "Visual" },
     
     -- Search
-    Search = { fg = colors.bg, bg = colors.yellow },
-    IncSearch = { fg = colors.bg, bg = colors.orange },
+    Search = { fg = colors.bg, bg = colors.lsp_bg },
+    IncSearch = { fg = colors.bg, bg = colors.lsp_bg },
     CurSearch = { link = "IncSearch" },
     
     -- Line numbers
