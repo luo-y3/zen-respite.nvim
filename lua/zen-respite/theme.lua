@@ -301,9 +301,9 @@ function M.setup()
     ["@lsp.type.typeParameter"] = { fg = colors.violet },
     ["@lsp.type.variable"] = { fg = colors.fg },
     
-    LspReferenceText = { bg = colors.lsp_bg, blend = 20 },
-    LspReferenceRead = { bg = colors.lsp_bg, blend = 20 },
-    LspReferenceWrite = { bg = colors.lsp_bg, blend = 20 },
+    LspReferenceText = { bg = colors.lsp_bg, blend = 100 },
+    LspReferenceRead = { bg = colors.lsp_bg, blend = 100 },
+    LspReferenceWrite = { bg = colors.lsp_bg, blend = 100 },
   }
   
   -- Diagnostics
