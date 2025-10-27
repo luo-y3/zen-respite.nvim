@@ -2,11 +2,11 @@
 
 A calm, bamboo-inspired Neovim colorscheme — blending Solarized harmony with Zen minimalism.
 
-> I'm just learn how to make colorscheme.
+> I'm using this to learn how to make colorscheme.
 
 ## 🧘‍♀️ Preview
 
-_(Coming Soon)_
+_(coming Soon)_
 
 ## 📦 Installation
 
