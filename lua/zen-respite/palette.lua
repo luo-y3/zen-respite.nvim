@@ -9,50 +9,56 @@ M.colors = {
   base01 = "#4c594c",
   base00 = "#6e7c6d", -- Comment / Low Contrast
   
-  -- Light / Creamy / Foreground Tones
-  base3  = "#486c3e", -- moss green (softer foreground)
-  base2  = "#7ea66a", -- balanced green tone
-  base1  = "#c5d8b6", -- light sage green
-  base0  = "#e6eedf", -- almost white, gentle warm tone
+  base3  = "#7d9774", -- Darker Foreground Green
+  base2  = "#a5bfa4", -- Medium Foreground: Soft, Muted Light Green
+  base1  = "#c6d8c3", -- Light Creamy Green
+  base0  = "#e3eee2", -- Lightest Cream/Off-White -- almost white, gentle warm tone
 
 --[[
 
   -- Forest Mist
+  base03 = "#1a2520", 
+  base02 = "#26352c", 
+  base01 = "#4c594c",
+  base00 = "#6e7c6d", 
   base3  = "#7d9774", -- Darker Foreground Green
   base2  = "#a5bfa4", -- Medium Foreground: Soft, Muted Light Green
   base1  = "#c6d8c3", -- Light Creamy Green
   base0  = "#e3eee2", -- Lightest Cream/Off-White
+  -- Accent Colors
+  yellow = "#e2b761", -- Golden/Ochre Yellow
+  orange = "#e07c5a", 
+  red    = "#cc6666",
+  magenta= "#d279a3",
+  violet = "#9c81a9",
+  blue   = "#7796b4",
+  cyan   = "#6e9a42", -- Palm Leaf/Bamboo Green
+  green  = "#a4b95f", -- Middle Green Yellow/Light Olive
+  cursor = "#c5d0c0", 
+  visual = "#33453a", -- Muted Dark Green for selection
+  border = "#455a45", -- Darker green for borders
 
   -- Moss & Stone
+  base03 = "#1a2520", 
+  base02 = "#26352c", 
+  base01 = "#4c594c",
+  base00 = "#6e7c6d",
   base3  = "#728c6e", -- Darker Foreground Green/Grey
   base2  = "#9fbda3", -- Medium Foreground: Muted Sage Green
   base1  = "#cdd9b7", -- Light Beige/Olive Cream
   base0  = "#f0f5e3", -- Lightest Cream/Pale Yellow
-
-  -- Moss Calm
-  base3 = "#486c3e"
-  base2 = "#7ea66a"
-  base1 = "#c5d8b6"
-  base0 = "#e6eedf"
-
-  -- Warm Bamboo
-  base3 = "#5a6625"
-  base2 = "#98a75a"
-  base1 = "#d4deb2"
-  base0 = "#f4f7e6"
-
-  -- Mist Pine
-  base3 = "#415a4a"
-  base2 = "#7ea896"
-  base1 = "#c3d9cc"
-  base0 = "#e8f1ec"
-
-  -- Zen Clay
-  base3 = "#7a6048"
-  base2 = "#b9987b"
-  base1 = "#e1c7a9"
-  base0 = "#f6ecdf"
-
+  -- Accent Colors
+  yellow = "#e2b761", -- Golden/Ochre Yellow
+  orange = "#e07c5a", 
+  red    = "#cc6666",
+  magenta= "#d279a3",
+  violet = "#9c81a9",
+  blue   = "#7796b4",
+  cyan   = "#6e9a42", -- Palm Leaf/Bamboo Green
+  green  = "#a4b95f", -- Middle Green Yellow/Light Olive
+  cursor = "#c5d0c0", 
+  visual = "#33453a", -- Muted Dark Green for selection
+  border = "#455a45", -- Darker green for borders
 
 
 --]]--
@@ -72,6 +78,54 @@ M.colors = {
 }
 
 M.themes = {
+  forest_mist = {
+    base03 = "#1a2520", 
+    base02 = "#26352c", 
+    base01 = "#4c594c",
+    base00 = "#6e7c6d", 
+    base3  = "#7d9774", -- Darker Foreground Green
+    base2  = "#a5bfa4", -- Medium Foreground: Soft, Muted Light Green
+    base1  = "#c6d8c3", -- Light Creamy Green
+    base0  = "#e3eee2", -- Lightest Cream/Off-White
+    -- Accent Colors
+    yellow = "#e2b761", -- Golden/Ochre Yellow
+    orange = "#e07c5a", 
+    red    = "#cc6666",
+    magenta= "#d279a3",
+    violet = "#9c81a9",
+    blue   = "#7796b4",
+    cyan   = "#6e9a42", -- Palm Leaf/Bamboo Green
+    green  = "#a4b95f", -- Middle Green Yellow/Light Olive
+    cursor = "#c5d0c0", 
+    visual = "#33453a", -- Muted Dark Green for selection
+    border = "#455a45", -- Darker green for borders
+  },
+
+  moss_stone = {
+    -- Moss & Stone
+    base03 = "#1a2520", 
+    base02 = "#26352c", 
+    base01 = "#4c594c",
+    base00 = "#6e7c6d",
+    base3  = "#728c6e", -- Darker Foreground Green/Grey
+    base2  = "#9fbda3", -- Medium Foreground: Muted Sage Green
+    base1  = "#cdd9b7", -- Light Beige/Olive Cream
+    base0  = "#f0f5e3", -- Lightest Cream/Pale Yellow
+    -- Accent Colors
+    yellow = "#e2b761", -- Golden/Ochre Yellow
+    orange = "#e07c5a", 
+    red    = "#cc6666",
+    magenta= "#d279a3",
+    violet = "#9c81a9",
+    blue   = "#7796b4",
+    cyan   = "#6e9a42", -- Palm Leaf/Bamboo Green
+    green  = "#a4b95f", -- Middle Green Yellow/Light Olive
+    cursor = "#c5d0c0", 
+    visual = "#33453a", -- Muted Dark Green for selection
+    border = "#455a45", -- Darker green for borders
+
+  },
+
   moss_calm = {
     base03 = "#1a2520",
     base02 = "#26352c",

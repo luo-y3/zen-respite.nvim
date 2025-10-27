@@ -11,6 +11,8 @@ function M.setup()
   local cfg = config.get()
   local transparent = cfg.transparent
   local is_dark = cfg.style == "dark"
+  local theme_name = cfg.theme or "forest_mist"
+  local c = palette.get(theme_name)
   
   -- Color mappings based on theme style
   local colors = {}
