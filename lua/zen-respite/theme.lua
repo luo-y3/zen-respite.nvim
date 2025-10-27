@@ -27,7 +27,7 @@ function M.setup()
     colors.fg_alt = c.base0
     colors.fg_comment = c.base00
     colors.border = c.border
-    colors.lsp_bg = c.hl
+    colors.lsp_bg = c.base00
   end
   
   -- Common accent colors (same for both themes)
@@ -301,9 +301,9 @@ function M.setup()
     ["@lsp.type.typeParameter"] = { fg = colors.violet },
     ["@lsp.type.variable"] = { fg = colors.fg },
     
-    LspReferenceText = { bg = colors.lsp_bg, blend = 10 },
-    LspReferenceRead = { bg = colors.lsp_bg, blend = 10 },
-    LspReferenceWrite = { bg = colors.lsp_bg, blend = 10 },
+    LspReferenceText = { bg = colors.lsp_bg },
+    LspReferenceRead = { bg = colors.lsp_bg },
+    LspReferenceWrite = { bg = colors.lsp_bg },
   }
   
   -- Diagnostics
