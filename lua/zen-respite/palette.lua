@@ -4,7 +4,35 @@ local M = {}
 
 
 M.themes = {
+<<<<<<< HEAD
   forest_mist = {
+=======
+
+  zen_meadow = {
+    base03 = "#18180C",
+    base02 = "#2e3223",
+    base01 = "#4a4f3a",
+    base00 = "#777b63",
+    base3  = "#5a6625",
+    base2  = "#98a75a",
+    base1  = "#d4deb2",
+    base0  = "#f4f7e6",
+    yellow = "#e0b14a",
+    orange = "#d97a4f",
+    red    = "#cc6666",
+    magenta= "#d279a3",
+    violet = "#9c81a9",
+    blue   = "#7796b4",
+    cyan   = "#7c9b43",
+    green  = "#a6b95d",
+    cursor = "#d6d9c7",
+    visual = "#3a3e2e",
+    border = "#575b44",
+    hl     = "#5d1b0e",
+  },
+
+  zen_forest = {
+>>>>>>> 3160d2b (test)
     base03 = "#1a2520", 
     base02 = "#26352c", 
     base01 = "#4c594c",
@@ -28,7 +56,11 @@ M.themes = {
     hl     = "#5d1b0e",
   },
 
+<<<<<<< HEAD
   moss_stone = {
+=======
+  zen_stone = {
+>>>>>>> 3160d2b (test)
     -- Moss & Stone
     base03 = "#1a2520", 
     base02 = "#26352c", 
@@ -54,7 +86,11 @@ M.themes = {
 
   },
 
+<<<<<<< HEAD
   moss_calm = {
+=======
+  zen_moss = {
+>>>>>>> 3160d2b (test)
     base03 = "#1a2520",
     base02 = "#26352c",
     base01 = "#4c594c",
@@ -77,6 +113,7 @@ M.themes = {
     hl     = "#5d1b0e",
   },
 
+<<<<<<< HEAD
   warm_bamboo = {
     base03 = "#1e2018",
     base02 = "#2e3223",
@@ -99,6 +136,8 @@ M.themes = {
     border = "#575b44",
     hl     = "#5d1b0e",
   },
+=======
+>>>>>>> 3160d2b (test)
 
   misty_pine = {
     base03 = "#1b2421",
@@ -149,7 +188,11 @@ M.themes = {
 }
 
 function M.get(theme_name)
+<<<<<<< HEAD
   return M.themes[theme_name] or M.themes.warm_bamboo
+=======
+  return M.themes[theme_name] or M.themes.zen_meadow
+>>>>>>> 3160d2b (test)
 end
 
 return M
