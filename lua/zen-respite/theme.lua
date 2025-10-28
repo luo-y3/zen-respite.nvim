@@ -11,11 +11,7 @@ function M.setup()
   local cfg = config.get()
   local transparent = cfg.transparent
   local is_dark = cfg.style == "dark"
-<<<<<<< HEAD
-  local theme_name = cfg.theme or "warm_bamboo"
-=======
   local theme_name = cfg.theme or "zen_meadow"
->>>>>>> 3160d2b (test)
   local c = palette.get(theme_name)
   
   -- Color mappings based on theme style
