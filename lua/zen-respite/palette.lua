@@ -6,7 +6,7 @@ local M = {}
 M.themes = {
 
   zen_meadow = {
-    base03 = "#18180C",
+    base03 = "#12120A",
     base02 = "#2e3223",
     base01 = "#4a4f3a",
     base00 = "#777b63",
