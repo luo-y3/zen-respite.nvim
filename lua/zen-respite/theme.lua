@@ -89,7 +89,7 @@ function M.setup()
 		TabLineSel = { fg = colors.fg, bg = colors.bg_highlight },
 
 		-- Popup menu
-		Pmenu = { fg = colors.fg, bg = colors.bg_alt },
+		Pmenu = { fg = colors.fg, bg = colors.bg_highlight },
 		PmenuSel = { fg = colors.bg, bg = c.base3 },
 		PmenuSbar = { bg = colors.bg_highlight },
 		PmenuThumb = { bg = colors.fg_comment },
