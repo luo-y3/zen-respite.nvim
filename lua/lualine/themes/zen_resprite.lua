@@ -27,8 +27,8 @@ local zen_resprite = {}
 zen_resprite.normal = {
 	a = { fg = colors.base03, bg = colors.green, gui = "bold" }, -- Mode: Black text on Green BG
 	b = { fg = colors.green, bg = colors.base02 }, -- Branch/Diagnostics
-	c = { fg = colors.base0, bg = colors.base01 }, -- Filename/Main
-	x = { fg = colors.base0, bg = colors.base01 }, -- Search/Progress
+	c = { fg = colors.base0, bg = "None" }, -- Filename/Main
+	x = { fg = colors.base0, bg = "None" }, -- Search/Progress
 	y = { fg = colors.base0, bg = colors.base02 }, -- Filetype/Progress
 	z = { fg = colors.base03, bg = colors.green, gui = "bold" }, -- Location: White text on Accent BG
 }
