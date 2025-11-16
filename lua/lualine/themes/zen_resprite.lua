@@ -47,10 +47,10 @@ zen_resprite.visual = {
 
 -- 4. INACTIVE STATUSLINE (Subdued colors)
 zen_resprite.inactive = {
-	a = { fg = colors.base00, bg = "None" },
-	b = { fg = colors.base01, bg = "None" },
-	c = { fg = colors.base01, bg = "None" },
-	z = { fg = colors.base01, bg = "None" },
+	a = { fg = colors.base00, bg = "none" },
+	b = { fg = colors.base01, bg = "none" },
+	c = { fg = colors.base01, bg = "none" },
+	z = { fg = colors.base01, bg = "none" },
 }
 
 return zen_resprite
