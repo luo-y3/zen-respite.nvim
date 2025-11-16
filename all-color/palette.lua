@@ -83,6 +83,6 @@ palette = {
   blue = "#06436f",
   blue = "#013d73",
   blue = "#003563",
-  blue = "#136163"
+  blue = "#bdd9ef"
 	},
 }
