@@ -26,23 +26,23 @@ local zen_resprite = {}
 -- 1. NORMAL MODE (Using Green, Base3)
 zen_resprite.normal = {
 	a = { fg = colors.base03, bg = colors.green, gui = "bold" }, -- Mode: Black text on Green BG
-	b = { fg = colors.base00, bg = colors.base01 }, -- Branch/Diagnostics
-	c = { fg = colors.base0, bg = colors.base02 }, -- Filename/Main
-	x = { fg = colors.base0, bg = colors.base02 }, -- Search/Progress
-	y = { fg = colors.base00, bg = colors.base01 }, -- Filetype/Progress
-	z = { fg = colors.base0, bg = colors.base3, gui = "bold" }, -- Location: White text on Accent BG
+	b = { fg = colors.green, bg = colors.base02 }, -- Branch/Diagnostics
+	c = { fg = colors.base0, bg = colors.base01 }, -- Filename/Main
+	x = { fg = colors.base0, bg = colors.base01 }, -- Search/Progress
+	y = { fg = colors.base0, bg = colors.base02 }, -- Filetype/Progress
+	z = { fg = colors.base03, bg = colors.green, gui = "bold" }, -- Location: White text on Accent BG
 }
 
 -- 2. INSERT MODE (Using Blue)
 zen_resprite.insert = {
 	a = { fg = colors.base03, bg = colors.blue, gui = "bold" },
-	z = { fg = colors.base0, bg = colors.blue, gui = "bold" },
+	z = { fg = colors.base03, bg = colors.blue, gui = "bold" },
 }
 
 -- 3. VISUAL MODE (Using Orange)
 zen_resprite.visual = {
-	a = { fg = colors.base03, bg = colors.orange, gui = "bold" },
-	z = { fg = colors.base0, bg = colors.orange, gui = "bold" },
+	a = { fg = colors.base03, bg = colors.red, gui = "bold" },
+	z = { fg = colors.base03, bg = colors.red, gui = "bold" },
 }
 
 -- 4. INACTIVE STATUSLINE (Subdued colors)
