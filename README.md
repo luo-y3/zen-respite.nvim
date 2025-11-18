@@ -6,8 +6,7 @@ A calm, bamboo-inspired Neovim colorscheme — blending Solarized harmony with Z
 
 ## 🧘‍♀️ Preview
 
-_<img width="1328" height="761" alt="image" src="https://github.com/user-attachments/assets/9160ef7c-022b-4dc3-ba20-45e454143b82" />
-_
+<img width="1328" height="761" alt="image" src="https://github.com/user-attachments/assets/9160ef7c-022b-4dc3-ba20-45e454143b82" />
 
 ## 📦 Installation
 
