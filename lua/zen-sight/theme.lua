@@ -7,7 +7,6 @@ local util = require("zen-sight.util")
 local M = {}
 
 function M.setup()
-	local c = palette.colors
 	local cfg = config.get()
 	local transparent = cfg.transparent
 	local is_dark = cfg.style == "dark"
