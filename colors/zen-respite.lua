@@ -1,5 +1,5 @@
 
--- zen-respite.nvim/colors/zen-respite.lua
+-- zen-sight.nvim/colors/zen-sight.lua
 -- Main colorscheme loader
 
-require("zen-respite").load()
+require("zen-sight").load()
