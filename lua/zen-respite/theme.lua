@@ -1,8 +1,8 @@
 -- zen-respite.nvim/lua/zen-respite/theme.lua
 
-local palette = require("zen-respite.palette")
-local config = require("zen-respite.config")
-local util = require("zen-respite.util")
+local palette = require("zen-sight.palette")
+local config = require("zen-sight.config")
+local util = require("zen-sight.util")
 
 local M = {}
 
