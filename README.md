@@ -1,4 +1,4 @@
-# 🌿 zen-respite.nvim
+# 🌿 zen-sight.nvim
 
 A calm, bamboo-inspired Neovim colorscheme — blending Solarized harmony with Zen minimalism.
 
@@ -26,6 +26,8 @@ this is a default theme.
   end
 }
 ```
+#NOTICE
+Change theme name from zen-resprte to zen-sight
 
 ## License
 
