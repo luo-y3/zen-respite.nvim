@@ -21,10 +21,10 @@ local colors = {
 	hl = "#751606",
 }
 
-local zen_resprite = {}
+local zen_sight = {}
 
 -- 1. NORMAL MODE (Using Green, Base3)
-zen_resprite.normal = {
+zen_sight.normal = {
 	a = { fg = colors.base03, bg = colors.green, gui = "bold" }, -- Mode: Black text on Green BG
 	b = { fg = colors.green, bg = colors.base02 }, -- Branch/Diagnostics
 	c = { fg = colors.base0, bg = colors.base01 }, -- Filename/Main
@@ -34,23 +34,23 @@ zen_resprite.normal = {
 }
 
 -- 2. INSERT MODE (Using Blue)
-zen_resprite.insert = {
+zen_sight.insert = {
 	a = { fg = colors.base03, bg = colors.blue, gui = "bold" },
 	z = { fg = colors.base03, bg = colors.blue, gui = "bold" },
 }
 
 -- 3. VISUAL MODE (Using Orange)
-zen_resprite.visual = {
+zen_sight.visual = {
 	a = { fg = colors.base03, bg = colors.red, gui = "bold" },
 	z = { fg = colors.base03, bg = colors.red, gui = "bold" },
 }
 
 -- 4. INACTIVE STATUSLINE (Subdued colors)
-zen_resprite.inactive = {
+zen_sight.inactive = {
 	a = { fg = colors.base00, bg = "NONE" },
 	b = { fg = colors.base01, bg = "NONE" },
 	c = { fg = colors.base01, bg = "NONE" },
 	z = { fg = colors.base01, bg = "NONE" },
 }
 
-return zen_resprite
+return zen_sight

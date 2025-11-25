@@ -27,7 +27,7 @@ this is a default theme.
 }
 ```
 #NOTICE
-Change theme name from zen-resprte to zen-sight
+Change theme name from zen-respite to zen-sight
 
 ## License
 

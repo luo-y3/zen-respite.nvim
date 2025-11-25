@@ -1,4 +1,4 @@
--- zen-respite.nvim/lua/zen-respite/theme.lua
+-- zen-sight.nvim/lua/zen-sight/theme.lua
 
 local palette = require("zen-sight.palette")
 local config = require("zen-sight.config")
