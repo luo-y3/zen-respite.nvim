@@ -128,9 +128,9 @@ function M.setup()
     WildMenu = { fg = colors.bg, bg = colors.blue },
     EndOfBuffer = { fg = colors.bg },
     BufferLineBackground = { fg = colors.fg_comment, bg = colors.bg },
-    BufferLineFill = { fg = colors.fg_comment, bg = colors.bg },
-    BufferLineBufferSelected = { fg = colors.fg, bg = colors.bg },
-    BufferLineSeparator = { fg = colors.fg_alt, bg = colors.bg },
+    -- BufferLineFill = { fg = colors.fg_comment, bg = colors.bg },
+    -- BufferLineBufferSelected = { fg = colors.fg, bg = colors.bg },
+    -- BufferLineSeparator = { fg = colors.fg, bg = colors.bg },
   }
 
   -- Syntax highlighting
