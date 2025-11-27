@@ -120,14 +120,14 @@ function M.setup()
     DiffText = { fg = colors.blue, bg = is_dark and c.base02 or c.base2, style = "bold" },
 
     -- Misc UI
+    EndOfBuffer = { fg = colors.bg },
+    BufferLineBackground = { fg = colors.fg_comment, bg = colors.bg },
     Title = { fg = colors.blue, style = "bold" },
     NonText = { fg = colors.fg_comment },
     Whitespace = { fg = colors.fg_comment },
     SpecialKey = { fg = colors.fg_comment },
     MatchParen = { fg = colors.orange, style = "bold" },
     WildMenu = { fg = colors.bg, bg = colors.blue },
-    EndOfBuffer = { fg = colors.bg },
-    BufferLineBackground = { fg = colors.fg_comment, bg = colors.bg },
     -- BufferLineFill = { fg = colors.fg_comment, bg = colors.bg },
     -- BufferLineBufferSelected = { fg = colors.fg, bg = colors.bg },
     -- BufferLineSeparator = { fg = colors.fg, bg = colors.bg },
