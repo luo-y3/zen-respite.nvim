@@ -122,12 +122,15 @@ function M.setup()
     -- Misc UI
     Title = { fg = colors.blue, style = "bold" },
     NonText = { fg = colors.fg_comment },
-    EndOfBuffer = { fg = colors.bg },
     Whitespace = { fg = colors.fg_comment },
     SpecialKey = { fg = colors.fg_comment },
     MatchParen = { fg = colors.orange, style = "bold" },
     WildMenu = { fg = colors.bg, bg = colors.blue },
+    EndOfBuffer = { fg = colors.bg },
     BufferLineBackground = { fg = colors.fg_comment, bg = colors.bg },
+    BufferLineFill = { fg = colors.fg_comment, bg = colors.bg },
+    BufferLineBufferSelected = { fg = colors.fg, bg = colors.bg },
+    BufferLineSeparator = { fg = colors.fg_comment, bg = colors.bg },
   }
 
   -- Syntax highlighting
