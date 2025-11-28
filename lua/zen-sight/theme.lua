@@ -15,9 +15,10 @@ function M.setup()
   -- Color mappings based on theme style
   local colors = {}
 
+  -- แก้ไข Logic: ถ้า transparent ให้เป็น "NONE" ถ้าไม่ ให้ใช้สี Base
   colors.bg = transparent and "NONE" or c.base03
   colors.bg_alt = transparent and "NONE" or c.base03
-  colors.bg_highlight = c.base02
+  colors.bg_highlight = c.base02 -- สีบรรทัดที่เลือก (CursorLine) ไม่ควรใส ควรมีสีจางๆ
   colors.bg_visual = c.visual
   colors.fg = c.base1
   colors.fg_alt = c.base0
@@ -25,7 +26,7 @@ function M.setup()
   colors.border = c.border
   colors.lsp_bg = c.hl
 
-  -- Common accent colors (same for both themes)
+  -- Common accent colors
   colors.red = c.red
   colors.orange = c.orange
   colors.yellow = c.yellow
@@ -66,34 +67,34 @@ function M.setup()
     CurSearch = { link = "IncSearch" },
 
     -- Line numbers
-    LineNr = { fg = colors.fg_comment },
-    CursorLineNr = { fg = colors.yellow, style = "bold" },
+    LineNr = { fg = colors.fg_comment, bg = "NONE" }, -- บังคับพื้นหลังใสสำหรับเลขบรรทัด
+    CursorLineNr = { fg = colors.yellow, style = "bold", bg = "NONE" },
 
     -- Splits and borders
-    VertSplit = { fg = colors.border },
-    WinSeparator = { fg = colors.border },
+    VertSplit = { fg = colors.border, bg = "NONE" },
+    WinSeparator = { fg = colors.border, bg = "NONE" },
     FloatBorder = { fg = colors.border, bg = transparent and "NONE" or colors.bg_alt },
 
     -- Statusline
     StatusLine = { fg = colors.fg, bg = colors.bg_highlight },
-    StatusLineNC = { fg = colors.fg_comment, bg = colors.bg_alt },
+    StatusLineNC = { fg = colors.fg_comment, bg = transparent and "NONE" or colors.bg_alt },
 
     -- Tabline
-    TabLine = { fg = colors.fg_comment, bg = colors.bg_alt },
+    TabLine = { fg = colors.fg_comment, bg = transparent and "NONE" or colors.bg_alt },
     TabLineFill = { bg = colors.bg },
     TabLineSel = { fg = colors.fg, bg = colors.bg_highlight },
 
     -- Popup menu
-    Pmenu = { fg = colors.fg, bg = colors.bg },
+    Pmenu = { fg = colors.fg, bg = transparent and "NONE" or colors.bg },
     PmenuSel = { fg = colors.bg, bg = c.base3 },
     PmenuSbar = { bg = colors.bg_highlight },
     PmenuThumb = { bg = colors.fg_comment },
 
     -- Misc
     Directory = { fg = colors.blue },
-    Folded = { fg = colors.fg_comment, bg = colors.bg_highlight },
-    FoldColumn = { fg = colors.fg_comment, bg = colors.bg },
-    SignColumn = { fg = colors.fg_alt, bg = transparent and "NONE" or colors.bg },
+    Folded = { fg = colors.fg_comment, bg = transparent and "NONE" or colors.bg_highlight },
+    FoldColumn = { fg = colors.fg_comment, bg = "NONE" },
+    SignColumn = { fg = colors.fg_alt, bg = "NONE" }, -- พื้นหลัง SignColumn ควรใสเสมอถ้าเปิด transparent
     Conceal = { fg = colors.fg_comment },
 
     -- Messages
@@ -110,13 +111,14 @@ function M.setup()
     SpellRare = { sp = colors.violet, style = "undercurl" },
 
     -- Diff
-    DiffAdd = { fg = colors.green, bg = colors.bg },
-    DiffChange = { fg = colors.yellow, bg = colors.bg },
-    DiffDelete = { fg = colors.red, bg = colors.bg },
-    DiffText = { fg = colors.blue, bg = colors.bg },
+    DiffAdd = { fg = colors.green, bg = "NONE" },
+    DiffChange = { fg = colors.yellow, bg = "NONE" },
+    DiffDelete = { fg = colors.red, bg = "NONE" },
+    DiffText = { fg = colors.blue, bg = "NONE" },
 
     -- Misc UI
-    EndOfBuffer = { fg = colors.bg },
+    -- แก้ไข EndOfBuffer: ใช้สี c.base03 ตรงๆ แทน colors.bg เพื่อให้ตัวหนอนยังพอมองเห็นได้ (ถ้า bg เป็น NONE)
+    EndOfBuffer = { fg = c.base03, bg = "NONE" },
     BufferLineBackground = { fg = colors.fg_comment, bg = colors.bg },
     Title = { fg = colors.blue, style = "bold" },
     NonText = { fg = colors.fg_comment },
@@ -124,9 +126,28 @@ function M.setup()
     SpecialKey = { fg = colors.fg_comment },
     MatchParen = { fg = colors.orange, style = "bold" },
     WildMenu = { fg = colors.bg, bg = colors.blue },
-    -- BufferLineFill = { fg = colors.fg_comment, bg = colors.bg },
-    -- BufferLineBufferSelected = { fg = colors.fg, bg = colors.bg },
-    -- BufferLineSeparator = { fg = colors.fg, bg = colors.bg },
+  }
+
+  -- เพิ่มส่วน Plugin เพื่อรองรับ Transparency ให้สมบูรณ์
+  theme.plugins = {
+    -- NvimTree
+    NvimTreeNormal = { fg = colors.fg, bg = colors.bg },
+    NvimTreeNormalNC = { fg = colors.fg, bg = colors.bg },
+    NvimTreeWinSeparator = { fg = colors.border, bg = "NONE" },
+
+    -- NeoTree
+    NeoTreeNormal = { fg = colors.fg, bg = colors.bg },
+    NeoTreeNormalNC = { fg = colors.fg, bg = colors.bg },
+
+    -- Telescope
+    TelescopeNormal = { fg = colors.fg, bg = transparent and "NONE" or colors.bg_alt },
+    TelescopeBorder = { fg = colors.border, bg = transparent and "NONE" or colors.bg_alt },
+    TelescopeSelection = { fg = colors.fg, bg = colors.bg_highlight, style = "bold" },
+
+    -- GitSigns
+    GitSignsAdd = { fg = colors.green, bg = "NONE" },
+    GitSignsChange = { fg = colors.yellow, bg = "NONE" },
+    GitSignsDelete = { fg = colors.red, bg = "NONE" },
   }
 
   -- Syntax highlighting
@@ -322,30 +343,39 @@ function M.setup()
     DiagnosticVirtualTextInfo = { fg = colors.cyan, bg = transparent and "NONE" or colors.bg_alt },
     DiagnosticVirtualTextHint = { fg = colors.blue, bg = transparent and "NONE" or colors.bg_alt },
 
-    DiagnosticSignError = { fg = colors.red },
-    DiagnosticSignWarn = { fg = colors.yellow },
-    DiagnosticSignInfo = { fg = colors.cyan },
-    DiagnosticSignHint = { fg = colors.blue },
+    DiagnosticSignError = { fg = colors.red, bg = "NONE" },
+    DiagnosticSignWarn = { fg = colors.yellow, bg = "NONE" },
+    DiagnosticSignInfo = { fg = colors.cyan, bg = "NONE" },
+    DiagnosticSignHint = { fg = colors.blue, bg = "NONE" },
   }
 
   -- Git signs
   theme.git = {
-    GitSignsAdd = { fg = colors.green },
-    GitSignsChange = { fg = colors.yellow },
-    GitSignsDelete = { fg = colors.red },
+    GitSignsAdd = { fg = colors.green, bg = "NONE" },
+    GitSignsChange = { fg = colors.yellow, bg = "NONE" },
+    GitSignsDelete = { fg = colors.red, bg = "NONE" },
 
-    GitSignsAddNr = { fg = colors.green },
-    GitSignsChangeNr = { fg = colors.yellow },
-    GitSignsDeleteNr = { fg = colors.red },
+    GitSignsAddNr = { fg = colors.green, bg = "NONE" },
+    GitSignsChangeNr = { fg = colors.yellow, bg = "NONE" },
+    GitSignsDeleteNr = { fg = colors.red, bg = "NONE" },
 
-    GitSignsAddLn = { fg = colors.green },
-    GitSignsChangeLn = { fg = colors.yellow },
-    GitSignsDeleteLn = { fg = colors.red },
+    GitSignsAddLn = { fg = colors.green, bg = "NONE" },
+    GitSignsChangeLn = { fg = colors.yellow, bg = "NONE" },
+    GitSignsDeleteLn = { fg = colors.red, bg = "NONE" },
   }
 
   -- Combine all highlights
   local highlights = {}
-  for _, group in pairs({ theme.editor, theme.syntax, theme.treesitter, theme.lsp, theme.diagnostics, theme.git }) do
+  -- เพิ่ม theme.plugins เข้าไปในการรวมตาราง
+  for _, group in pairs({
+    theme.editor,
+    theme.plugins,
+    theme.syntax,
+    theme.treesitter,
+    theme.lsp,
+    theme.diagnostics,
+    theme.git,
+  }) do
     highlights = vim.tbl_extend("force", highlights, group)
   end
 
