@@ -15,10 +15,9 @@ function M.setup()
   -- Color mappings based on theme style
   local colors = {}
 
-  -- แก้ไข Logic: ถ้า transparent ให้เป็น "NONE" ถ้าไม่ ให้ใช้สี Base
   colors.bg = transparent and "NONE" or c.base03
   colors.bg_alt = transparent and "NONE" or c.base03
-  colors.bg_highlight = c.base02 -- สีบรรทัดที่เลือก (CursorLine) ไม่ควรใส ควรมีสีจางๆ
+  colors.bg_highlight = c.base02
   colors.bg_visual = c.visual
   colors.fg = c.base1
   colors.fg_alt = c.base0
