@@ -15,18 +15,20 @@ this is a default theme.
 
 ```lua
 {
-  "luo-y3/zen-respite.nvim",
+  "luo-y3/zen-sight.nvim",
   lazy = false,
   priority = 1000,
   config = function()
-    require("zen-respite").setup({
+    require("zen-sight").setup({
       transparent = true, -- Optional for transparency.
     })
-    vim.cmd.colorscheme("zen-respite")
+    vim.cmd.colorscheme("zen-sight")
   end
 }
 ```
-#NOTICE
+
+# NOTICE
+
 Change theme name from zen-respite to zen-sight
 
 ## License
