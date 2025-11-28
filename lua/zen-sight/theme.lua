@@ -9,25 +9,21 @@ local M = {}
 function M.setup()
   local cfg = config.get()
   local transparent = cfg.transparent
-  local is_dark = cfg.style == "dark"
   local theme_name = cfg.theme or "zen_meadow"
   local c = palette.get(theme_name)
 
   -- Color mappings based on theme style
   local colors = {}
 
-  -- Dark theme mapping
-  if is_dark then
-    colors.bg = transparent and "NONE" or c.base03
-    colors.bg_alt = transparent and "NONE" or c.base03
-    colors.bg_highlight = c.base02
-    colors.bg_visual = c.visual
-    colors.fg = c.base1
-    colors.fg_alt = c.base0
-    colors.fg_comment = c.base00
-    colors.border = c.border
-    colors.lsp_bg = c.hl
-  end
+  colors.bg = transparent and "NONE" or c.base03
+  colors.bg_alt = transparent and "NONE" or c.base03
+  colors.bg_highlight = c.base02
+  colors.bg_visual = c.visual
+  colors.fg = c.base1
+  colors.fg_alt = c.base0
+  colors.fg_comment = c.base00
+  colors.border = c.border
+  colors.lsp_bg = c.hl
 
   -- Common accent colors (same for both themes)
   colors.red = c.red
@@ -114,10 +110,10 @@ function M.setup()
     SpellRare = { sp = colors.violet, style = "undercurl" },
 
     -- Diff
-    DiffAdd = { fg = colors.green, bg = is_dark and c.base02 or c.base2 },
-    DiffChange = { fg = colors.yellow, bg = is_dark and c.base02 or c.base2 },
-    DiffDelete = { fg = colors.red, bg = is_dark and c.base02 or c.base2 },
-    DiffText = { fg = colors.blue, bg = is_dark and c.base02 or c.base2, style = "bold" },
+    DiffAdd = { fg = colors.green, bg = colors.bg },
+    DiffChange = { fg = colors.yellow, bg = colors.bg },
+    DiffDelete = { fg = colors.red, bg = colors.bg },
+    DiffText = { fg = colors.blue, bg = colors.bg },
 
     -- Misc UI
     EndOfBuffer = { fg = colors.bg },
@@ -355,41 +351,39 @@ function M.setup()
 
   -- Terminal colors
   if cfg.terminal_colors then
-    if is_dark then
-      vim.g.terminal_color_0 = c.base02
-      vim.g.terminal_color_1 = c.red
-      vim.g.terminal_color_2 = c.green
-      vim.g.terminal_color_3 = c.yellow
-      vim.g.terminal_color_4 = c.blue
-      vim.g.terminal_color_5 = c.magenta
-      vim.g.terminal_color_6 = c.cyan
-      vim.g.terminal_color_7 = c.base1
-      vim.g.terminal_color_8 = c.base00
-      vim.g.terminal_color_9 = c.orange
-      vim.g.terminal_color_10 = c.green
-      vim.g.terminal_color_11 = c.yellow
-      vim.g.terminal_color_12 = c.blue
-      vim.g.terminal_color_13 = c.violet
-      vim.g.terminal_color_14 = c.cyan
-      vim.g.terminal_color_15 = c.base3
-    else
-      vim.g.terminal_color_0 = c.base2
-      vim.g.terminal_color_1 = c.red
-      vim.g.terminal_color_2 = c.green
-      vim.g.terminal_color_3 = c.yellow
-      vim.g.terminal_color_4 = c.blue
-      vim.g.terminal_color_5 = c.magenta
-      vim.g.terminal_color_6 = c.cyan
-      vim.g.terminal_color_7 = c.base01
-      vim.g.terminal_color_8 = c.base0
-      vim.g.terminal_color_9 = c.orange
-      vim.g.terminal_color_10 = c.green
-      vim.g.terminal_color_11 = c.yellow
-      vim.g.terminal_color_12 = c.blue
-      vim.g.terminal_color_13 = c.violet
-      vim.g.terminal_color_14 = c.cyan
-      vim.g.terminal_color_15 = c.base03
-    end
+    vim.g.terminal_color_0 = c.base02
+    vim.g.terminal_color_1 = c.red
+    vim.g.terminal_color_2 = c.green
+    vim.g.terminal_color_3 = c.yellow
+    vim.g.terminal_color_4 = c.blue
+    vim.g.terminal_color_5 = c.magenta
+    vim.g.terminal_color_6 = c.cyan
+    vim.g.terminal_color_7 = c.base1
+    vim.g.terminal_color_8 = c.base00
+    vim.g.terminal_color_9 = c.orange
+    vim.g.terminal_color_10 = c.green
+    vim.g.terminal_color_11 = c.yellow
+    vim.g.terminal_color_12 = c.blue
+    vim.g.terminal_color_13 = c.violet
+    vim.g.terminal_color_14 = c.cyan
+    vim.g.terminal_color_15 = c.base3
+  else
+    vim.g.terminal_color_0 = c.base2
+    vim.g.terminal_color_1 = c.red
+    vim.g.terminal_color_2 = c.green
+    vim.g.terminal_color_3 = c.yellow
+    vim.g.terminal_color_4 = c.blue
+    vim.g.terminal_color_5 = c.magenta
+    vim.g.terminal_color_6 = c.cyan
+    vim.g.terminal_color_7 = c.base01
+    vim.g.terminal_color_8 = c.base0
+    vim.g.terminal_color_9 = c.orange
+    vim.g.terminal_color_10 = c.green
+    vim.g.terminal_color_11 = c.yellow
+    vim.g.terminal_color_12 = c.blue
+    vim.g.terminal_color_13 = c.violet
+    vim.g.terminal_color_14 = c.cyan
+    vim.g.terminal_color_15 = c.base03
   end
 
   return highlights
