@@ -159,15 +159,15 @@ function M.setup()
     Float = { fg = colors.cyan },
 
     Identifier = util.apply_styles({ fg = colors.blue }, cfg.styles.variables),
-    Function = util.apply_styles({ fg = colors.yellow }, cfg.styles.functions),
+    Function = util.apply_styles({ fg = colors.orange }, cfg.styles.functions),
 
-    Statement = util.apply_styles({ fg = colors.orange }, cfg.styles.keywords),
-    Conditional = util.apply_styles({ fg = colors.orange }, cfg.styles.keywords),
-    Repeat = util.apply_styles({ fg = colors.orange }, cfg.styles.keywords),
-    Label = util.apply_styles({ fg = colors.orange }, cfg.styles.keywords),
+    Statement = util.apply_styles({ fg = colors.yellow }, cfg.styles.keywords),
+    Conditional = util.apply_styles({ fg = colors.yellow }, cfg.styles.keywords),
+    Repeat = util.apply_styles({ fg = colors.yellow }, cfg.styles.keywords),
+    Label = util.apply_styles({ fg = colors.yellow }, cfg.styles.keywords),
     Operator = { fg = colors.fg },
-    Keyword = util.apply_styles({ fg = colors.orange }, cfg.styles.keywords),
-    Exception = util.apply_styles({ fg = colors.orange }, cfg.styles.keywords),
+    Keyword = util.apply_styles({ fg = colors.yellow }, cfg.styles.keywords),
+    Exception = util.apply_styles({ fg = colors.yellow }, cfg.styles.keywords),
 
     PreProc = { fg = colors.magenta },
     Include = { fg = colors.magenta },
@@ -222,28 +222,28 @@ function M.setup()
     ["@constructor"] = { fg = colors.violet },
 
     -- Keywords
-    ["@keyword"] = util.apply_styles({ fg = colors.orange }, cfg.styles.keywords),
-    ["@keyword.function"] = util.apply_styles({ fg = colors.orange }, cfg.styles.keywords),
-    ["@keyword.operator"] = { fg = colors.orange },
-    ["@keyword.return"] = util.apply_styles({ fg = colors.orange }, cfg.styles.keywords),
-    ["@keyword.conditional"] = util.apply_styles({ fg = colors.orange }, cfg.styles.keywords),
-    ["@keyword.repeat"] = util.apply_styles({ fg = colors.orange }, cfg.styles.keywords),
+    ["@keyword"] = util.apply_styles({ fg = colors.yellow }, cfg.styles.keywords),
+    ["@keyword.function"] = util.apply_styles({ fg = colors.yellow }, cfg.styles.keywords),
+    ["@keyword.operator"] = { fg = colors.yellow },
+    ["@keyword.return"] = util.apply_styles({ fg = colors.yellow }, cfg.styles.keywords),
+    ["@keyword.conditional"] = util.apply_styles({ fg = colors.yellow }, cfg.styles.keywords),
+    ["@keyword.repeat"] = util.apply_styles({ fg = colors.yellow }, cfg.styles.keywords),
     ["@keyword.import"] = { fg = colors.magenta },
-    ["@keyword.exception"] = util.apply_styles({ fg = colors.orange }, cfg.styles.keywords),
+    ["@keyword.exception"] = util.apply_styles({ fg = colors.yellow }, cfg.styles.keywords),
 
     -- Operators
     ["@operator"] = { fg = colors.fg },
 
     -- Punctuation
-    ["@punctuation.delimiter"] = { fg = colors.fg },
-    ["@punctuation.bracket"] = { fg = colors.fg },
-    ["@punctuation.special"] = { fg = colors.red },
+    ["@punctuation.delimiter"] = { fg = colors.red },
+    ["@punctuation.bracket"] = { fg = colors.red },
+    ["@punctuation.special"] = { fg = colors.fg },
 
     -- Strings
     ["@string"] = util.apply_styles({ fg = colors.green }, cfg.styles.strings),
     ["@string.regex"] = { fg = colors.cyan },
     ["@string.escape"] = { fg = colors.red },
-    ["@string.special"] = { fg = colors.red },
+    ["@string.special"] = { fg = colors.yellow },
 
     -- Characters
     ["@character"] = { fg = colors.green },
