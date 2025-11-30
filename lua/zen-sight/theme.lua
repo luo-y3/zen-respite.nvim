@@ -66,7 +66,7 @@ function M.setup()
     CurSearch = { link = "IncSearch" },
 
     -- Line numbers
-    LineNr = { fg = colors.fg_comment, bg = "NONE" }, -- บังคับพื้นหลังใสสำหรับเลขบรรทัด
+    LineNr = { fg = colors.fg_comment, bg = "NONE" },
     CursorLineNr = { fg = colors.yellow, style = "bold", bg = "NONE" },
 
     -- Splits and borders
@@ -93,7 +93,7 @@ function M.setup()
     Directory = { fg = colors.blue },
     Folded = { fg = colors.fg_comment, bg = transparent and "NONE" or colors.bg_highlight },
     FoldColumn = { fg = colors.fg_comment, bg = "NONE" },
-    SignColumn = { fg = colors.fg_alt, bg = "NONE" }, -- พื้นหลัง SignColumn ควรใสเสมอถ้าเปิด transparent
+    SignColumn = { fg = colors.fg_alt, bg = "NONE" },
     Conceal = { fg = colors.fg_comment },
 
     -- Messages
@@ -195,8 +195,8 @@ function M.setup()
 
   -- Treesitter highlights
   theme.treesitter = {
-    -- Identifiers
-    ["@variable"] = util.apply_styles({ fg = colors.fg }, cfg.styles.variables),
+    -- Variables
+    ["@variable"] = { fg = colors.fg },
     ["@variable.builtin"] = { fg = colors.red },
     ["@variable.parameter"] = { fg = colors.fg },
     ["@variable.member"] = { fg = colors.blue },
@@ -236,7 +236,7 @@ function M.setup()
 
     -- Punctuation
     ["@punctuation.delimiter"] = { fg = colors.fg },
-    ["@punctuation.bracket"] = { fg = colors.border },
+    ["@punctuation.bracket"] = { fg = colors.orange },
     ["@punctuation.special"] = { fg = colors.border },
 
     -- Strings
@@ -306,7 +306,7 @@ function M.setup()
     ["@lsp.type.decorator"] = { fg = colors.magenta },
     ["@lsp.type.enum"] = { fg = colors.violet },
     ["@lsp.type.enumMember"] = { fg = colors.cyan },
-    ["@lsp.type.function"] = { fg = colors.blue },
+    ["@lsp.type.function"] = { fg = colors.yellow },
     ["@lsp.type.interface"] = { fg = colors.violet },
     ["@lsp.type.macro"] = { fg = colors.magenta },
     ["@lsp.type.method"] = { fg = colors.yellow },
@@ -344,9 +344,7 @@ function M.setup()
     DiagnosticSignWarn = { fg = colors.yellow, bg = "NONE" },
     DiagnosticSignInfo = { fg = colors.cyan, bg = "NONE" },
     DiagnosticSignHint = { fg = colors.blue, bg = "NONE" },
-  }
-
-  -- Git signs
+  } -- Git signs
   theme.git = {
     GitSignsAdd = { fg = colors.green, bg = "NONE" },
     GitSignsChange = { fg = colors.yellow, bg = "NONE" },
@@ -363,7 +361,6 @@ function M.setup()
 
   -- Combine all highlights
   local highlights = {}
-  -- เพิ่ม theme.plugins เข้าไปในการรวมตาราง
   for _, group in pairs({
     theme.editor,
     theme.plugins,
