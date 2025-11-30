@@ -122,7 +122,7 @@ function M.setup()
     NonText = { fg = colors.fg_comment },
     Whitespace = { fg = colors.fg_comment },
     SpecialKey = { fg = colors.fg_comment },
-    MatchParen = { fg = colors.orange },
+    MatchParen = { fg = colors.cyan },
     WildMenu = { fg = colors.bg, bg = colors.blue },
   }
 
@@ -161,8 +161,8 @@ function M.setup()
     Identifier = util.apply_styles({ fg = colors.blue }, cfg.styles.variables),
     Function = util.apply_styles({ fg = colors.orange }, cfg.styles.functions),
 
-    Statement = util.apply_styles({ fg = colors.yellow }, cfg.styles.keywords),
-    Conditional = util.apply_styles({ fg = colors.yellow }, cfg.styles.keywords),
+    Statement = util.apply_styles({ fg = colors.blue }, cfg.styles.keywords),
+    Conditional = util.apply_styles({ fg = colors.blue }, cfg.styles.keywords),
     Repeat = util.apply_styles({ fg = colors.yellow }, cfg.styles.keywords),
     Label = util.apply_styles({ fg = colors.yellow }, cfg.styles.keywords),
     Operator = { fg = colors.fg },
