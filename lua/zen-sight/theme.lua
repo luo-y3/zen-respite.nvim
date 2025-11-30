@@ -223,12 +223,12 @@ function M.setup()
 
     -- Keywords
     ["@keyword"] = util.apply_styles({ fg = colors.yellow }, cfg.styles.keywords),
-    ["@keyword.function"] = util.apply_styles({ fg = colors.yellow }, cfg.styles.keywords),
+    ["@keyword.function"] = util.apply_styles({ fg = colors.green }, cfg.styles.keywords),
     ["@keyword.operator"] = { fg = colors.yellow },
-    ["@keyword.return"] = util.apply_styles({ fg = colors.yellow }, cfg.styles.keywords),
-    ["@keyword.conditional"] = util.apply_styles({ fg = colors.yellow }, cfg.styles.keywords),
+    ["@keyword.return"] = util.apply_styles({ fg = colors.green }, cfg.styles.keywords),
+    ["@keyword.conditional"] = util.apply_styles({ fg = colors.green }, cfg.styles.keywords),
     ["@keyword.repeat"] = util.apply_styles({ fg = colors.yellow }, cfg.styles.keywords),
-    ["@keyword.import"] = { fg = colors.magenta },
+    ["@keyword.import"] = { fg = colors.red },
     ["@keyword.exception"] = util.apply_styles({ fg = colors.yellow }, cfg.styles.keywords),
 
     -- Operators
@@ -240,7 +240,7 @@ function M.setup()
     ["@punctuation.special"] = { fg = colors.border },
 
     -- Strings
-    ["@string"] = util.apply_styles({ fg = colors.green }, cfg.styles.strings),
+    ["@string"] = util.apply_styles({ fg = colors.cyan }, cfg.styles.strings),
     ["@string.regex"] = { fg = colors.cyan },
     ["@string.escape"] = { fg = colors.red },
     ["@string.special"] = { fg = colors.yellow },
@@ -257,8 +257,8 @@ function M.setup()
     ["@number.float"] = { fg = colors.cyan },
 
     -- Types
-    ["@type"] = { fg = colors.violet },
-    ["@type.builtin"] = { fg = colors.violet },
+    ["@type"] = { fg = colors.yellow },
+    ["@type.builtin"] = { fg = colors.yellow },
     ["@type.definition"] = { fg = colors.violet },
     ["@type.qualifier"] = { fg = colors.orange },
 
@@ -306,7 +306,7 @@ function M.setup()
     ["@lsp.type.decorator"] = { fg = colors.magenta },
     ["@lsp.type.enum"] = { fg = colors.violet },
     ["@lsp.type.enumMember"] = { fg = colors.cyan },
-    ["@lsp.type.function"] = { fg = colors.yellow },
+    ["@lsp.type.function"] = { fg = colors.blue },
     ["@lsp.type.interface"] = { fg = colors.violet },
     ["@lsp.type.macro"] = { fg = colors.magenta },
     ["@lsp.type.method"] = { fg = colors.yellow },
