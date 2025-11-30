@@ -122,7 +122,7 @@ function M.setup()
     NonText = { fg = colors.fg_comment },
     Whitespace = { fg = colors.fg_comment },
     SpecialKey = { fg = colors.fg_comment },
-    MatchParen = { fg = colors.cyan },
+    MatchParen = { fg = colors.yellow, bg = colors.lsp_bg },
     WildMenu = { fg = colors.bg, bg = colors.blue },
   }
 
