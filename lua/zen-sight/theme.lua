@@ -233,7 +233,7 @@ function M.setup()
     ["@keyword.exception"] = util.apply_styles({ fg = colors.yellow }, cfg.styles.keywords),
 
     -- Operators
-    ["@operator"] = { fg = colors.fg },
+    ["@operator"] = { fg = colors.green },
 
     -- Punctuation
     ["@punctuation.delimiter"] = { fg = colors.fg },
@@ -276,9 +276,10 @@ function M.setup()
     ["@comment.note"] = { fg = colors.cyan },
 
     -- Tags (HTML, XML, etc.)
-    ["@tag"] = { fg = colors.blue },
+    ["@tag"] = { fg = colors.yellow },
     ["@tag.attribute"] = { fg = colors.cyan },
-    ["@tag.delimiter"] = { fg = colors.fg },
+    ["@tag.delimiter"] = { fg = colors.bk },
+    ["@tag.builtin"] = { fg = colors.orange },
 
     -- Markup
     ["@markup.strong"] = { style = "italic" },
