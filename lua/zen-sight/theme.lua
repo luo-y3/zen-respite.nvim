@@ -235,9 +235,9 @@ function M.setup()
     ["@operator"] = { fg = colors.fg },
 
     -- Punctuation
-    ["@punctuation.delimiter"] = { fg = colors.red },
-    ["@punctuation.bracket"] = { fg = colors.red },
-    ["@punctuation.special"] = { fg = colors.fg },
+    ["@punctuation.delimiter"] = { fg = colors.fg },
+    ["@punctuation.bracket"] = { fg = colors.border },
+    ["@punctuation.special"] = { fg = colors.border },
 
     -- Strings
     ["@string"] = util.apply_styles({ fg = colors.green }, cfg.styles.strings),
@@ -306,7 +306,7 @@ function M.setup()
     ["@lsp.type.decorator"] = { fg = colors.magenta },
     ["@lsp.type.enum"] = { fg = colors.violet },
     ["@lsp.type.enumMember"] = { fg = colors.cyan },
-    ["@lsp.type.function"] = { fg = colors.yellow },
+    ["@lsp.type.function"] = { fg = colors.blue },
     ["@lsp.type.interface"] = { fg = colors.violet },
     ["@lsp.type.macro"] = { fg = colors.magenta },
     ["@lsp.type.method"] = { fg = colors.yellow },
