@@ -116,7 +116,6 @@ function M.setup()
     DiffText = { fg = colors.blue, bg = "NONE" },
 
     -- Misc UI
-    -- แก้ไข EndOfBuffer: ใช้สี c.base03 ตรงๆ แทน colors.bg เพื่อให้ตัวหนอนยังพอมองเห็นได้ (ถ้า bg เป็น NONE)
     EndOfBuffer = { fg = c.base03, bg = "NONE" },
     BufferLineBackground = { fg = colors.fg_comment, bg = colors.bg },
     Title = { fg = colors.blue, style = "bold" },
@@ -127,7 +126,6 @@ function M.setup()
     WildMenu = { fg = colors.bg, bg = colors.blue },
   }
 
-  -- เพิ่มส่วน Plugin เพื่อรองรับ Transparency ให้สมบูรณ์
   theme.plugins = {
     -- NvimTree
     NvimTreeNormal = { fg = colors.fg, bg = colors.bg },
@@ -191,8 +189,8 @@ function M.setup()
 
     Underlined = { style = "underline" },
     Ignore = { fg = colors.fg_comment },
-    Error = { fg = colors.red, style = "bold" },
-    Todo = { fg = colors.magenta, style = "bold" },
+    Error = { fg = colors.red },
+    Todo = { fg = colors.magenta },
   }
 
   -- Treesitter highlights
