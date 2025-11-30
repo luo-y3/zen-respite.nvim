@@ -203,7 +203,7 @@ function M.setup()
 
     -- Constants
     ["@constant"] = { fg = colors.cyan },
-    ["@constant.builtin"] = { fg = colors.cyan },
+    ["@constant.builtin"] = { fg = colors.orange },
     ["@constant.macro"] = { fg = colors.magenta },
 
     -- Modules
@@ -311,7 +311,7 @@ function M.setup()
     ["@lsp.type.macro"] = { fg = colors.magenta },
     ["@lsp.type.method"] = { fg = colors.yellow },
     ["@lsp.type.namespace"] = { fg = colors.blue },
-    ["@lsp.type.parameter"] = { fg = colors.fg },
+    ["@lsp.type.parameter"] = { fg = colors.orange },
     ["@lsp.type.property"] = { fg = colors.blue },
     ["@lsp.type.struct"] = { fg = colors.violet },
     ["@lsp.type.type"] = { fg = colors.violet },
