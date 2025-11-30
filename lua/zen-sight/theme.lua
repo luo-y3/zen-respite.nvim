@@ -123,7 +123,7 @@ function M.setup()
     NonText = { fg = colors.fg_comment },
     Whitespace = { fg = colors.fg_comment },
     SpecialKey = { fg = colors.fg_comment },
-    MatchParen = { fg = colors.bk, bg = colors.lsp_bg },
+    MatchParen = { fg = colors.orange, bg = colors.lsp_bg },
     WildMenu = { fg = colors.bg, bg = colors.blue },
   }
 
@@ -220,7 +220,7 @@ function M.setup()
     ["@function.method.call"] = { fg = colors.yellow },
 
     -- Constructors
-    ["@constructor"] = { fg = colors.violet },
+    ["@constructor"] = { fg = colors.bk },
 
     -- Keywords
     ["@keyword"] = util.apply_styles({ fg = colors.green }, cfg.styles.keywords),
