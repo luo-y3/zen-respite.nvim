@@ -280,7 +280,7 @@ function M.setup()
     ["@tag.delimiter"] = { fg = colors.fg },
 
     -- Markup
-    ["@markup.strong"] = { style = "bold" },
+    ["@markup.strong"] = { style = "italic" },
     ["@markup.italic"] = { style = "italic" },
     ["@markup.underline"] = { style = "underline" },
     ["@markup.strikethrough"] = { style = "strikethrough" },
