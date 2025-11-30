@@ -222,7 +222,7 @@ function M.setup()
     ["@constructor"] = { fg = colors.violet },
 
     -- Keywords
-    ["@keyword"] = util.apply_styles({ fg = colors.yellow }, cfg.styles.keywords),
+    ["@keyword"] = util.apply_styles({ fg = colors.green }, cfg.styles.keywords),
     ["@keyword.function"] = util.apply_styles({ fg = colors.green }, cfg.styles.keywords),
     ["@keyword.operator"] = { fg = colors.yellow },
     ["@keyword.return"] = util.apply_styles({ fg = colors.green }, cfg.styles.keywords),
