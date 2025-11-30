@@ -24,6 +24,7 @@ function M.setup()
   colors.fg_comment = c.base00
   colors.border = c.border
   colors.lsp_bg = c.hl
+  colors.bk = c.bracket
 
   -- Common accent colors
   colors.red = c.red
@@ -122,7 +123,7 @@ function M.setup()
     NonText = { fg = colors.fg_comment },
     Whitespace = { fg = colors.fg_comment },
     SpecialKey = { fg = colors.fg_comment },
-    MatchParen = { fg = colors.yellow, bg = colors.lsp_bg },
+    MatchParen = { fg = colors.bk, bg = colors.lsp_bg },
     WildMenu = { fg = colors.bg, bg = colors.blue },
   }
 
@@ -236,7 +237,7 @@ function M.setup()
 
     -- Punctuation
     ["@punctuation.delimiter"] = { fg = colors.fg },
-    ["@punctuation.bracket"] = { fg = colors.orange },
+    ["@punctuation.bracket"] = { fg = colors.bk },
     ["@punctuation.special"] = { fg = colors.border },
 
     -- Strings

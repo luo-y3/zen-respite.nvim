@@ -25,6 +25,7 @@ M.themes = {
     visual = "#3a3e2e",
     border = "#575b44",
     hl = "#751606",
+    bracket = "#cb4db0",
   },
 
   zen_forest = {
