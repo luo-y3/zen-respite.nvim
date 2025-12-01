@@ -158,7 +158,7 @@ function M.setup()
     BufferLineModifiedSelected = { bg = colors.bg_visual },
     BufferLineModifiedVisible = { bg = colors.bg_visual },
 
-    BufferLineMiniIconsAzure = { fg = colors.bf_base, colors.bg_highlight },
+    BufferLineMiniIconsAzure = { fg = colors.bf_base, bg = colors.bg_highlight },
     BufferLineMiniIconsAzureInactive = { fg = colors.bf_vis, bg = colors.bg_visual },
     BufferLineMiniIconsAzureSelected = { fg = colors.bf_vis, bg = colors.bg_visual },
 
