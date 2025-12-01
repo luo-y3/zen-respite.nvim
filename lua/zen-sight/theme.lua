@@ -25,6 +25,8 @@ function M.setup()
   colors.border = c.border
   colors.lsp_bg = c.hl
   colors.bk = c.bracket
+  colors.bf_base = c.bficonbase
+  colors.bf_vis = c.bficonactive
 
   -- Common accent colors
   colors.red = c.red
@@ -155,6 +157,10 @@ function M.setup()
     BufferLineModified = { bg = colors.bg_highlight },
     BufferLineModifiedSelected = { bg = colors.bg_visual },
     BufferLineModifiedVisible = { bg = colors.bg_visual },
+
+    BufferLineMiniIconsAzure = { fg = colors.bf_base },
+    BufferLineMiniIconsAzureInactive = { fg = colors.bf_vis },
+    BufferLineMiniIconsAzureSelected = { fg = colors.bf_vis },
 
     Title = { fg = colors.blue, style = "bold" },
     NonText = { fg = colors.fg_comment },

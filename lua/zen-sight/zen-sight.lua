@@ -65,12 +65,6 @@ function M.apply_highlights(c, config)
   hl.DiagnosticError = { fg = c.error }
   hl.GitSignsAdd = { fg = c.git_add }
   hl.TelescopeSelection = { fg = c.fg, bg = c.bg_highlight, bold = true }
-  hl.BufferLineMiniIconsAzure = { fg = c.bficonbase }
-  hl.BufferLineMiniIconsAzureInactive = { fg = c.bficonactive }
-  hl.BufferLineMiniIconsAzureSelected = { fg = c.bficonactive }
-  hl.BufferLineMiniIconsBlue = { fg = c.blue }
-  hl.BufferLineMiniIconsGreen = { fg = c.green }
-  hl.BufferLineMiniIconsPurple = { fg = c.violet }
 
   -- User-defined overrides
   config.on_highlights(hl, c)
