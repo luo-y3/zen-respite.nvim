@@ -65,8 +65,8 @@ function M.apply_highlights(c, config)
   hl.DiagnosticError = { fg = c.error }
   hl.GitSignsAdd = { fg = c.git_add }
   hl.TelescopeSelection = { fg = c.fg, bg = c.bg_highlight, bold = true }
-  -- hl.DevIconLua = { fg = c.blue }
-  hl.DevIcon = { fg = c.blue }
+  hl.DevIconLua = { fg = c.blue }
+  -- hl.DevIcon = { fg = c.blue }
 
   -- User-defined overrides
   config.on_highlights(hl, c)
