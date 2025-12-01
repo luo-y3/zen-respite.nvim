@@ -158,9 +158,9 @@ function M.setup()
     BufferLineModifiedSelected = { bg = colors.bg_visual },
     BufferLineModifiedVisible = { bg = colors.bg_visual },
 
-    BufferLineMiniIconsAzure = { fg = colors.bf_base, bg = colors.bg_highlight },
-    BufferLineMiniIconsAzureInactive = { fg = colors.bf_vis, bg = colors.bg_visual },
-    BufferLineMiniIconsAzureSelected = { fg = colors.bf_vis, bg = colors.bg_visual },
+    BufferLineMiniIconsAzure = { fg = colors.bf_base, bg = colors.bg_highlight, italic = true },
+    BufferLineMiniIconsAzureInactive = { fg = colors.bf_vis, bg = colors.bg_visual, italic = true },
+    BufferLineMiniIconsAzureSelected = { fg = colors.bf_vis, bg = colors.bg_visual, italic = true, bold = true },
 
     Title = { fg = colors.blue, style = "bold" },
     NonText = { fg = colors.fg_comment },
