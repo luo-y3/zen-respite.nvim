@@ -26,6 +26,8 @@ M.themes = {
     border = "#575b44",
     hl = "#751606",
     bracket = "#cb4db0",
+    bficonbase = "#415a4a",
+    bficonactive = "#7ea896",
   },
 
   zen_forest = {
