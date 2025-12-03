@@ -27,56 +27,7 @@ M.themes = {
     hl = "#751606",
     bracket = "#cb4db0",
     bficonbase = "#415a4a",
-    bficonactive = "#7ea896",
-  },
-
-  zen_forest = {
-    base03 = "#1a2520",
-    base02 = "#26352c",
-    base01 = "#4c594c",
-    base00 = "#6e7c6d",
-    base3 = "#7d9774", -- Darker Foreground Green
-    base2 = "#a5bfa4", -- Medium Foreground: Soft, Muted Light Green
-    base1 = "#c6d8c3", -- Light Creamy Green
-    base0 = "#e3eee2", -- Lightest Cream/Off-White
-    -- Accent Colors
-    yellow = "#e2b761", -- Golden/Ochre Yellow
-    orange = "#e07c5a",
-    red = "#cc6666",
-    magenta = "#d279a3",
-    violet = "#9c81a9",
-    blue = "#7796b4",
-    cyan = "#6e9a42", -- Palm Leaf/Bamboo Green
-    green = "#a4b95f", -- Middle Green Yellow/Light Olive
-    cursor = "#c5d0c0",
-    visual = "#33453a", -- Muted Dark Green for selection
-    border = "#455a45", -- Darker green for borders
-    hl = "#5d1b0e",
-  },
-
-  zen_stone = {
-    -- Moss & Stone
-    base03 = "#1a2520",
-    base02 = "#26352c",
-    base01 = "#4c594c",
-    base00 = "#6e7c6d",
-    base3 = "#728c6e", -- Darker Foreground Green/Grey
-    base2 = "#9fbda3", -- Medium Foreground: Muted Sage Green
-    base1 = "#cdd9b7", -- Light Beige/Olive Cream
-    base0 = "#f0f5e3", -- Lightest Cream/Pale Yellow
-    -- Accent Colors
-    yellow = "#e2b761", -- Golden/Ochre Yellow
-    orange = "#e07c5a",
-    red = "#cc6666",
-    magenta = "#d279a3",
-    violet = "#9c81a9",
-    blue = "#7796b4",
-    cyan = "#6e9a42", -- Palm Leaf/Bamboo Green
-    green = "#a4b95f", -- Middle Green Yellow/Light Olive
-    cursor = "#c5d0c0",
-    visual = "#33453a", -- Muted Dark Green for selection
-    border = "#455a45", -- Darker green for borders
-    hl = "#5d1b0e",
+    bficonactive = "#69bf9b",
   },
 
   zen_night = {
@@ -99,29 +50,6 @@ M.themes = {
     cursor = "#c5d0c0",
     visual = "#33453a",
     border = "#455a45",
-    hl = "#5d1b0e",
-  },
-
-  misty_pine = {
-    base03 = "#1b2421",
-    base02 = "#24322d",
-    base01 = "#4a5a54",
-    base00 = "#6a7a73",
-    base3 = "#415a4a",
-    base2 = "#7ea896",
-    base1 = "#c3d9cc",
-    base0 = "#e8f1ec",
-    yellow = "#dfc574",
-    orange = "#e18a64",
-    red = "#cc6666",
-    magenta = "#d18bb2",
-    violet = "#a691c1",
-    blue = "#84a5b8",
-    cyan = "#6ea890",
-    green = "#9ebd88",
-    cursor = "#c8d4c9",
-    visual = "#2e3d37",
-    border = "#4a5a50",
     hl = "#5d1b0e",
   },
 
