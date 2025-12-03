@@ -137,9 +137,9 @@ function M.setup()
     BufferLineError = { fg = colors.red, bg = colors.bg_highlight, style = "italic" },
     BufferLineErrorSelected = { fg = colors.red, bg = colors.bg_visual, style = "italic,bold" },
     BufferLineErrorVisible = { fg = colors.red, bg = colors.bg_visual, style = "italic" },
-    BufferLineErrorDiagnostic = { fg = colors.orange, bg = colors.bg_highlight, style = "italic" },
-    BufferLineErrorDiagnosticSelected = { fg = colors.orange, bg = colors.bg_visual, style = "italic,bold" },
-    BufferLineErrorDiagnosticVisible = { fg = colors.orange, bg = colors.bg_visual, style = "italic" },
+    BufferLineErrorDiagnostic = { fg = colors.yellow, bg = colors.bg_highlight, style = "italic" },
+    BufferLineErrorDiagnosticSelected = { fg = colors.yellow, bg = colors.bg_visual, style = "italic,bold" },
+    BufferLineErrorDiagnosticVisible = { fg = colors.yellow, bg = colors.bg_visual, style = "italic" },
 
     BufferLineWarning = { fg = colors.yellow, bg = colors.bg_highlight, style = "italic" },
     BufferLineWarningDiagnosticSelected = { fg = colors.yellow, bg = colors.bg_visual, style = "italic,bold" },
@@ -161,6 +161,8 @@ function M.setup()
     BufferLineMiniIconsAzure = { fg = colors.bf_base, bg = colors.bg_highlight, style = "italic" },
     BufferLineMiniIconsAzureInactive = { fg = colors.bf_vis, bg = colors.bg_visual, style = "italic" },
     BufferLineMiniIconsAzureSelected = { fg = colors.bf_vis, bg = colors.bg_visual, style = "italic,bold" },
+    BufferLineMiniIconsBlue = { fg = colors.bf_base, bg = colors.bg_highlight, style = "italic,bold" },
+    BufferLineMiniIconsBlueSelected = { fg = colors.bf_vis, bg = colors.bg_visual, style = "italic,bold" },
 
     Title = { fg = colors.blue, style = "bold" },
     NonText = { fg = colors.fg_comment },
