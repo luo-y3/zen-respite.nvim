@@ -44,7 +44,7 @@ function M.setup()
   -- Editor highlights
   theme.editor = {
     Normal = { fg = colors.fg, bg = colors.bg },
-    NormalFloat = { fg = colors.fg, bg = colors.bg_highlight or transparent and "NONE" },
+    NormalFloat = { fg = colors.fg, bg = transparent and "NONE" or colors.bg_highlight },
     NormalNC = { fg = colors.fg, bg = colors.bg },
 
     -- Cursor
