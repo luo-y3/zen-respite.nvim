@@ -44,7 +44,7 @@ function M.setup()
   -- Editor highlights
   theme.editor = {
     Normal = { fg = colors.fg, bg = colors.bg },
-    NormalFloat = { fg = colors.fg, bg = transparent and "NONE" or colors.bg_alt },
+    NormalFloat = { fg = colors.fg, bg = colors.bg_highlight },
     NormalNC = { fg = colors.fg, bg = colors.bg },
 
     -- Cursor
@@ -60,7 +60,7 @@ function M.setup()
     ColorColumn = { bg = colors.bg_highlight },
 
     -- Visual
-    Visual = { bg = colors.bg_visual },
+    Visual = { bg = colors.bg_highlight },
     VisualNOS = { link = "Visual" },
 
     -- Search
@@ -88,7 +88,7 @@ function M.setup()
 
     -- Popup menu
     Pmenu = { fg = colors.fg, bg = transparent and "NONE" or colors.bg },
-    PmenuSel = { fg = colors.bg, bg = c.base3 },
+    PmenuSel = { fg = colors.bg, bg = c.visual },
     PmenuSbar = { bg = colors.bg_highlight },
     PmenuThumb = { bg = colors.fg_comment },
 
