@@ -22,7 +22,7 @@ function M.apply_highlights(c, config)
   hl.Cursor = { fg = c.bg, bg = c.cursor }
   hl.CursorLine = { bg = c.bg_highlight }
   hl.CursorColumn = { bg = c.bg_highlight }
-  hl.CursorLineNr = { fg = c.yellow, bold = true }
+  hl.CursorLineNr = { fg = c.yellow, bg = c.visual, bold = true }
   hl.LineNr = { fg = c.fg_gutter }
 
   -- Sidebars (NvimTree, NeoTree, etc.)
