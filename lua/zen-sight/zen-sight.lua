@@ -43,7 +43,7 @@ function M.apply_highlights(c, config)
   hl.StatusLineNC = { fg = c.fg_gutter, bg = c.bg_statusline }
 
   -- Visual/Search
-  hl.Visual = { bg = c.visual }
+  hl.Visual = { bg = c.bg_highlight }
   hl.Search = { fg = c.bg, bg = c.yellow }
 
   -- === Syntax Highlights ===
