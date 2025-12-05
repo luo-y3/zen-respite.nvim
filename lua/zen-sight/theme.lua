@@ -123,9 +123,6 @@ function M.setup()
     BufferLineBackground = { fg = colors.fg_comment, bg = colors.bg_highlight, style = "italic" },
     BufferLineBufferSelected = { fg = colors.fg, bg = colors.bg_visual, style = "italic,bold" },
     BufferLineBufferVisible = { fg = colors.fg, bg = colors.bg_visual, style = "italic" },
-    -- BufferLineMiniIconsAzure = { bg = colors.bg_highlight },
-    -- BufferLineMiniIconsAzureSelected = { bg = colors.bg_visual },
-    -- BufferLineMiniIconsAzureInactive = { bg = colors.bg_visual },
     BufferLineHint = { fg = colors.blue, bg = colors.bg_highlight, style = "italic" },
     BufferLineHintSelected = { fg = colors.blue, bg = colors.bg_visual, style = "italic,bold" },
     BufferLineHintdisSelected = { fg = colors.blue, bg = colors.bg_highlight, style = "italic,bold" },
@@ -162,6 +159,7 @@ function M.setup()
     BufferLineMiniIconsAzureInactive = { fg = colors.bf_vis, bg = colors.bg_visual, style = "italic" },
     BufferLineMiniIconsAzureSelected = { fg = colors.bf_vis, bg = colors.bg_visual, style = "italic,bold" },
     BufferLineMiniIconsBlue = { fg = colors.bf_base, bg = colors.bg_highlight, style = "italic,bold" },
+    BufferLineMiniIconsBlueInactive = { fg = colors.bf_vis, bg = colors.bg_visual, style = "italic,bold" },
     BufferLineMiniIconsBlueSelected = { fg = colors.bf_vis, bg = colors.bg_visual, style = "italic,bold" },
 
     Title = { fg = colors.blue, style = "bold" },
@@ -391,7 +389,9 @@ function M.setup()
     DiagnosticSignWarn = { fg = colors.yellow, bg = "NONE" },
     DiagnosticSignInfo = { fg = colors.cyan, bg = "NONE" },
     DiagnosticSignHint = { fg = colors.blue, bg = "NONE" },
-  } -- Git signs
+  }
+
+  -- Git signs
   theme.git = {
     GitSignsAdd = { fg = colors.green, bg = "NONE" },
     GitSignsChange = { fg = colors.yellow, bg = "NONE" },

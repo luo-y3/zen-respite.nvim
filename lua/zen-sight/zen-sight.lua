@@ -66,6 +66,14 @@ function M.apply_highlights(c, config)
   hl.GitSignsAdd = { fg = c.git_add }
   hl.TelescopeSelection = { fg = c.fg, bg = c.bg_highlight, bold = true }
 
+  -- === icon ===
+  hl.BufferLineMiniIconsAzure = { fg = c.bf_base, bg = c.bg_highlight, style = "italic" }
+  hl.BufferLineMiniIconsAzureInactive = { fg = c.bf_vis, bg = c.bg_visual, style = "italic" }
+  hl.BufferLineMiniIconsAzureSelected = { fg = c.bf_vis, bg = c.bg_visual, style = "italic,bold" }
+  hl.BufferLineMiniIconsBlue = { fg = c.bf_base, bg = c.bg_highlight, style = "italic,bold" }
+  hl.BufferLineMiniIconsBlueInactive = { fg = c.bf_vis, bg = c.bg_visual, style = "italic,bold" }
+  hl.BufferLineMiniIconsBlueSelected = { fg = c.bf_vis, bg = c.bg_visual, style = "italic,bold" }
+
   -- User-defined overrides
   config.on_highlights(hl, c)
 
